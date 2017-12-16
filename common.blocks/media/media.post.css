@@ -1,9 +1,24 @@
 .media {
+	position: relative;
 	overflow: hidden;
+
 	&__video {
 		height: 342px;
 		position: relative;
 		background: url('dock.png');
+	}
+	&__cover {
+		height: 182px;
+		position: relative;
+		background: url('cartoon.png');
+	}
+	&__author {
+		position: absolute;
+		top: $space-l;
+		left: $space-l;
+	}
+	&__avatar {
+		background: red;
 	}
 	&__title {
 		position: relative;
@@ -29,11 +44,19 @@
 		border-bottom: $space-l solid transparent; 
 		border-left: $space-xxl solid var(--color-default);
 		cursor: pointer;
+		transition: .3s ease;
+
 		&:hover {
 			border-left: var(--space-xxl) solid var(--color-action);
 		}
 	}
 	&__channel-logo {
+		width: 24px;
+		height: 24px;
+		background: red;
+		border-radius: 50%;
+	}
+	&__avatar {
 		width: 24px;
 		height: 24px;
 		background: red;

@@ -68,12 +68,12 @@ module.exports = {
 		// },
 		{
 			block: 'promo-cards',
-			mods: { view: 'ghost', slide: 'first' },
+			mods: { view: 'inverse', slide: 'first' },
+			mix: { block: 'promo-cards', elem: 'media-section' },
 			content: [
 			{
 				elem: 'theme-name',
-				// elemMods: { position: 'center' },
-				content: 'Product'
+				content: 'Video'
 			},
 			{
 				elem: 'content',
@@ -84,71 +84,129 @@ module.exports = {
 					content: [
 					{
 						block: 'media',
-						attrs: {
-							style: 'width: 296px; height: 456px; border-radius: 12px;'
-						},
-						mix: { block: 'pt-card', mods: { view: 'inverse' } },
+						mix: { block: 'pt-card', mods: { view: 'default' } },
 						content: [
 						{
-							elem: 'video',
+							elem: 'cover',
 							content: [
+							{
+								elem: 'author',
+								mix: { block: 'promo-cards', elem: 'media-author-top' },
+								content: [
 								{
-									elem: 'play'
-								}
-							]
+									block: 'pt-icon-plus',
+									mods: { 'vertical-align': 'center' }, 
+									content: [
+									{
+										elem: 'icon',
+										elemMods: { 'indent-right': 'xs' },
+										content: [
+										{
+											block: 'media',
+											elem: 'avatar'
+										}]
+									},
+									{
+										elem: 'block',
+										content: [
+										{
+											block: 'text',
+											mods: { view: 'inverse', size: 's' },
+											content: 'James Bridle'
+										}]
+									}]
+								}]
+							}]
 						},
 						{
-							elem: 'title',
+							elem: 'article-title',
 							mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
 							content: [
-								{
-									block: 'text',
-									mods: { view: 'inverse', size: 'xxl' },
-									content: 'Mad Lib Theater with John Cena'
-								}
-							]
+							{
+								block: 'text',
+								mods: { view: 'primary', size: 'xxl' },
+								content: 'Something is wrong on the internet'
+							},
+							{
+								block: 'text',
+								mods: { view: 'primary', size: 'm' },
+								content: 'I’m James Bridle. I’m a writer and artist concerned with technology and culture. I usually write on my own blog…'
+							}]
 						},
 						{
 							elem: 'footer',
 							mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
 							content: [
+							{
+								block: 'text',
+								mods: { view: 'secondary', size: 's' },
+								content: 'Nov 6 / 21 min read'
+							},
+							{
+								block: 'text',
+								mods: { view: 'primary', size: 's' },
+								content: '512K views'
+							}]
+						}]
+					},
+					{
+						block: 'media',
+						mix: { block: 'pt-card', mods: { view: 'inverse' } },
+						content: [
+						{
+							elem: 'video',
+							content: [
+							{
+								elem: 'play'
+							}]
+						},
+						{
+							elem: 'title',
+							mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
+							content: [
+							{
+								block: 'text',
+								mods: { view: 'inverse', size: 'xxl' },
+								content: 'Mad Lib Theater with John Cena'
+							}]
+						},
+						{
+							elem: 'footer',
+							mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-a': 'l' } },
+							content: [
+							{
+								block: 'pt-icon-plus',
+								mods: { 'vertical-align': 'center' },
+								mix: { block: 'promo-cards', elem: 'media-author-bottom' },
+								content: [
 								{
-									block: 'pt-icon-plus',
-									mods: { 'vertical-align': 'center' }, 
+									elem: 'icon',
+									elemMods: { 'indent-right': 'xs' },
 									content: [
-										{
-											elem: 'icon',
-											elemMods: { 'indent-right': 'xs' },
-											content: [
-												{
-													block: 'media',
-													elem: 'channel-logo'
-												}
-											]
-										},
-										{
-											elem: 'block',
-											content: [
-												{
-													block: 'text',
-													mods: { view: 'inverse', size: 's' },
-													content: 'The Tonight Show…'
-												}
-											]
-										}
-									]
+									{
+										block: 'media',
+										elem: 'channel-logo'
+									}]
 								},
 								{
-									elem: 'view',
+									elem: 'block',
 									content: [
-										{
-											block: 'text',
-											mods: { view: 'inverse', size: 's' },
-											content: '512K views'
-										}
-									]
-								}
-							]
+									{
+										block: 'text',
+										mods: { view: 'inverse', size: 's' },
+										content: 'The Tonight Show…'
+									}]
+								}]
+							},
+							{
+								elem: 'view',
+								content: [
+								{
+									block: 'text',
+									mods: { view: 'inverse', size: 's' },
+									content: '512K views'
+								}]
+							}]
 						}]
 					}]
 				},
@@ -178,6 +236,7 @@ module.exports = {
 							block: 'text',
 							attrs: { style: 'font-family: \'IBM Plex Mono\' !important;' },
 							mods: { size: 'xl', transform: 'uppercase', view: 'letter', align: 'center' },
+							mix: { block: 'promo-cards', elem: 'media-tab-1' },
 							content: 'Video'
 						}
 					},
@@ -187,7 +246,8 @@ module.exports = {
 						content: {
 							block: 'text',
 							attrs: { style: 'font-family: \'IBM Plex Mono\' !important;' },
-							mods: { size: 'xl', transform: 'uppercase', view: 'primary', align: 'center' },
+							mods: { size: 'xl', transform: 'uppercase', align: 'center' },
+							mix: { block: 'promo-cards', elem: 'media-tab-2' },
 							content: 'Text'
 						}
 					},
@@ -197,7 +257,8 @@ module.exports = {
 						content: {
 							block: 'text',
 							attrs: { style: 'font-family: \'IBM Plex Mono\' !important;' },
-							mods: { size: 'xl', transform: 'uppercase', view: 'primary', align: 'center' },
+							mods: { size: 'xl', transform: 'uppercase', align: 'center' },
+							mix: { block: 'promo-cards', elem: 'media-tab-3' },
 							content: 'Music'
 						}
 					}]
