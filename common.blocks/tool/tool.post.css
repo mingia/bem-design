@@ -1,0 +1,3 @@
+.tool {
+	margin-bottom: calc( 2 * var(--space-xxl) );
+}
