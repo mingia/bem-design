@@ -50,8 +50,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
@@ -90,8 +92,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
@@ -130,8 +134,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
@@ -170,8 +176,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
@@ -210,8 +218,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
@@ -250,8 +260,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
@@ -290,8 +302,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
@@ -330,8 +344,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
@@ -370,8 +386,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
@@ -410,8 +428,10 @@ module.exports = {
 															content: [
 																{
 																	elem: 'avatar',
-																	mix: { block: 'pt-avatar' },
-																	mix: { block: 'decorator', mods: { 'indent-r': 's'}},
+																	mix: [
+																		{ block: 'pt-avatar' },
+																		{ block: 'decorator', mods: { 'indent-r': 's'}}
+																	],
 																	content: [
 																		{
 																			block: 'pt-avatar',
