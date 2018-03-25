@@ -854,10 +854,78 @@ module.exports = {
 														}
 													]
 												}
+											]
+										},
 
+									//ARTICLE-PREVIEW
+										{
+											elem: 'fraction',
+											elemMods: { col: '4'},
+											content: [
+												{
+													block: 'article-preview',
+													mix: { block: 'pt-card' },
+													content: [
+														{
+															elem: 'footer-wrapper',
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' } },
+															content: [
+																{
+																	elem: 'footer',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'inverse', size: 'xxl', weight: 'bold' },
+																			content: 'This is a slow roll: '
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'inverse', size: 'l' },
+																			content: 'silicon valley insiders think that facebook will never be the same'
+																		},
+																		{
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'center' },
+																			mix: { block: 'decorator', mods: { 'indent-t': 'l' } },
+																			content: [
+																				{
+																					elem: 'icon',
+																					elemMods: { 'indent-right': 's' },
+																					mix: { block: 'brand-logo', mods: { view: 'itunes', size: 'xs' } }
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { view: 'inverse', size: 'm', weight: 'bold', display: 'inline' },
+																							content: 'Hive '
+																						},
+																						{
+																							block: 'text',
+																							mods: { view: 'inverse', size: 'm', weight: 'light', display: 'inline' },
+																							content: 'Nick Bilton'
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														},
+														{
+															elem: 'elem',
+															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+															content: {
+																block: 'image',
+																url: '/assets/bem-starter-kit/publication.png'
+															}
+														}
+													]
+												}
 											]
 										}
-
 
 									]
 								}
