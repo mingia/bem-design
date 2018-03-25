@@ -1,3 +1,30 @@
 .place {
-
+	position: relative;
+	&__type {
+		opacity: 0.7;
+	}
+	&__date {
+		height: 80px;
+		width: 80px;
+		background: #449FFF; /* */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	&__description {
+		padding-top: 96px !important;
+		background: #027EFF;
+	}
+	&__feedback {
+		background: var(--color-default);
+	}
+	&__info {
+		background: var(--color-default);
+	}
+	&__action {
+		background: var(--color-default);
+	}
 }
