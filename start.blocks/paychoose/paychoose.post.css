@@ -1,0 +1,46 @@
+.paychoose {
+	border-radius: 9px;
+	border: 1px solid var(--color-border-control);
+
+	&__item {
+		display: flex;
+		padding: var(--space-m);
+		border-bottom: 1px solid var(--color-border-control);
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	&__item-header {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__name {
+		display: flex;
+	}
+	&__radio {
+		width: var(--space-l);
+		height: var(--space-l);
+		border-radius: 50%;
+		box-sizing: border-box;
+		background: var(--color-default);
+		position: relative;
+		margin-right: var(--space-m);
+
+		&_view {
+			&_default {
+				border: 1px solid var(--color-border-control);
+			}
+			&_checked {
+				border: 1px solid transparent;
+				&::before {
+					width: var(--space-xs);
+					height: var(--space-xs);
+					background-color: var(--color-link);
+				}
+			}
+		}
+	}
+}

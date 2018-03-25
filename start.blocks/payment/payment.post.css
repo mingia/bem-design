@@ -1,3 +1,16 @@
 .payment {
 
+	&__header {
+		background: var(--color-default);
+	}
+
+	&__item {
+		background: var(--color-default);
+	}
+
+	&__info {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
 }

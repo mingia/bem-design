@@ -7,7 +7,6 @@ module.exports = {
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
 		{ elem: 'css', url: 'bem-starter-auth.min.css' },
-		{ elem: 'css', url: '/assets/ibm-type/css/ibm-type.css' },
 		{ elem: 'css', url: '/assets/bem-starter-kit/decorator/decorator.css'},
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
@@ -15,7 +14,7 @@ module.exports = {
 	mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
-		mods: { color: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default' }
+		mods: { color: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' },
 	},
 	content: [
 		{
@@ -64,34 +63,56 @@ module.exports = {
 														},
 
 														{
-															block: 'input',
-															mods: { theme: 'islands', width: 'available', size: 'xl'},
-															placeholder: 'Username',
-															mix: { block: 'decorator', mods: { 'indent-b': 'l' } }
-														},
-														{
-															block: 'input',
-															mods: { theme: 'islands', width: 'available', size: 'xl'},
-															placeholder: 'Password',
-															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } }
-														},
+															block: 'pt-form',
+															mods: { view: 'default' },
+															mix: { block: 'auth', elem: 'form' },
+															content: [
+																{
+																	elem: 'item',
+																	elemMods: { 'indent-b': 'l' },
+																	content: {
+																		block: 'input',
+																		mods: { theme: 'islands', width: 'available', size: 'xl'},
+																		placeholder: 'Username',
+																	},
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'indent-b': 'xl' },
+																	content: {
+																		block: 'input',
+																		mods: { theme: 'islands', width: 'available', size: 'xl'},
+																		placeholder: 'Password',
+																	},
+																},
 
-														{
-															block: 'button',
-															mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-															text: 'Sign in',
-															mix: { block: 'decorator', mods: { 'indent-b': 's' } }
+																{
+																	elem: 'item',
+																	elemMods: { 'indent-b': 's' },
+																	content: {
+																		block: 'button',
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
+																		text: 'Sign in',
+																	},
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'indent-b': 'm' },
+																	content: {
+																		block: 'button',
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
+																		text: 'Facebook',
+																	},
+																},
+																{
+																	elem: 'item',
+																	content: {
+																		block: 'text', mods: { view: 'link', size: 's', align: 'center' },
+																		content: 'Signup'
+																	}
+																}
+															]
 														},
-														{
-															block: 'button',
-															mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-															text: 'Facebook',
-															mix: { block: 'decorator', mods: { 'indent-b': 'l' } }
-														},
-														{
-															block: 'text', mods: { view: 'link', size: 's', align: 'center' },
-															content: 'Signup'
-														}
 
 													]
 												}
@@ -125,34 +146,56 @@ module.exports = {
 														},
 
 														{
-															block: 'input',
-															mods: { theme: 'islands', width: 'available', size: 'xl'},
-															placeholder: 'Username',
-															mix: { block: 'decorator', mods: { 'indent-b': 'l' } }
-														},
-														{
-															block: 'input',
-															mods: { theme: 'islands', width: 'available', size: 'xl'},
-															placeholder: 'Password',
-															mix: { block: 'decorator', mods: { 'indent-b': 'xl' } }
-														},
+															block: 'pt-form',
+															mods: { view: 'default' },
+															mix: { block: 'auth', elem: 'form' },
+															content: [
+																{
+																	elem: 'item',
+																	elemMods: { 'indent-b': 'l' },
+																	content: {
+																		block: 'input',
+																		mods: { theme: 'islands', width: 'available', size: 'xl'},
+																		placeholder: 'Username',
+																	},
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'indent-b': 'xl' },
+																	content: {
+																		block: 'input',
+																		mods: { theme: 'islands', width: 'available', size: 'xl'},
+																		placeholder: 'Password',
+																	},
+																},
 
-														{
-															block: 'button',
-															mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-															text: 'Sign in',
-															mix: { block: 'decorator', mods: { 'indent-b': 's' } }
+																{
+																	elem: 'item',
+																	elemMods: { 'indent-b': 's' },
+																	content: {
+																		block: 'button',
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
+																		text: 'Sign up',
+																	},
+																},
+																{
+																	elem: 'item',
+																	elemMods: { 'indent-b': 'm' },
+																	content: {
+																		block: 'button',
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
+																		text: 'Facebook',
+																	},
+																},
+																{
+																	elem: 'item',
+																	content: {
+																		block: 'text', mods: { view: 'link', size: 's', align: 'center' },
+																		content: 'Login'
+																	}
+																}
+															]
 														},
-														{
-															block: 'button',
-															mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-															text: 'Facebook',
-															mix: { block: 'decorator', mods: { 'indent-b': 'l' } }
-														},
-														{
-															block: 'text', mods: { view: 'link', size: 's', align: 'center' },
-															content: 'Login'
-														}
 
 													]
 												}
@@ -186,17 +229,29 @@ module.exports = {
 														},
 
 														{
-															block: 'input',
-															mods: { theme: 'islands', width: 'available', size: 'xl'},
-															placeholder: 'Email',
-															mix: { block: 'decorator', mods: { 'indent-b': 'l' } }
-														},
+															block: 'pt-form',
+															mods: { view: 'default' },
+															mix: { block: 'auth', elem: 'form' },
+															content: [
+																{
+																	elem: 'item',
+																	elemMods: { 'indent-b': 'l' },
+																	content: {
+																		block: 'input',
+																		mods: { theme: 'islands', width: 'available', size: 'xl'},
+																		placeholder: 'Username',
+																	},
+																},
 
-														{
-															block: 'button',
-															mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-															text: 'Reset',
-															mix: { block: 'decorator', mods: { 'indent-b': 's' } }
+																{
+																	elem: 'item',
+																	content: {
+																		block: 'button',
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
+																		text: 'Reset',
+																	},
+																},
+															]
 														},
 
 													]
