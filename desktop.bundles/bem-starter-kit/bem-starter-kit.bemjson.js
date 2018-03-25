@@ -21,7 +21,7 @@ module.exports = {
 		{
 			block: 'tpl-layout',
 			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' } },
-			// attrs: { style: 'background: var(--color-ghost)' },
+			attrs: { style: 'background: var(--color-ghost)' },
 			content: [
 				/* История */
 				{
@@ -1902,6 +1902,7 @@ module.exports = {
 															content: [
 																{
 																	block: 'image',
+																	width: 320,
 																	url: '../../../../assets/bem-starter-kit/subzero-cover.png',
 																}
 															]
@@ -2278,7 +2279,7 @@ module.exports = {
 										{
 											elem: 'fraction',
 											attrs: {
-												'style': 'background-color: var(--color-default);'
+												'style': 'background-color: var(--color-default); height: 460px; overflow: hidden;'
 											},
 											elemMods: { col: '4'},
 											content: [
@@ -2935,7 +2936,7 @@ module.exports = {
 												{
 													block: 'auth',
 													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
-													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; overflow: hidden; box-sizing: border-box;'},
+													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; box-sizing: border-box; background: #fff;'},
 													content: [
 														{
 															elem: 'header',
@@ -3018,7 +3019,7 @@ module.exports = {
 												{
 													block: 'auth',
 													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
-													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; overflow: hidden; box-sizing: border-box;'},
+													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; box-sizing: border-box;  background: #fff;'},
 													content: [
 														{
 															elem: 'header',
@@ -3101,7 +3102,7 @@ module.exports = {
 												{
 													block: 'auth',
 													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
-													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; overflow: hidden; width: 320px; box-sizing: border-box;'},
+													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; width: 320px; box-sizing: border-box;  background: #fff;'},
 													content: [
 														{
 															elem: 'header',
@@ -3182,7 +3183,7 @@ module.exports = {
 												{
 													block: 'decorator',
 													mods: { 'space-t': 'xl' },
-													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; overflow: hidden;'},
+													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; background: #fff;'},
 													content: [
 														{
 															block: 'text',
@@ -3359,9 +3360,9 @@ module.exports = {
 											elem: 'fraction',
 											elemMods: { col: '4'},
 											content: [
-																								{
+												{
 													block: 'feed',
-													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; overflow: hidden;'},
+													attrs: { style: 'border: 1px solid var(--color-border); height: 456px; overflow: hidden '},
 													mix: { block: 'pt-list', mods: { view: 'ghost' } },
 													content: [
 														{
