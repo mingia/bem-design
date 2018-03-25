@@ -1,3 +1,7 @@
 .auth {
 
+	&__header {
+		padding-top: var(--space-xxl);
+		height: 146px;
+	}
 }
