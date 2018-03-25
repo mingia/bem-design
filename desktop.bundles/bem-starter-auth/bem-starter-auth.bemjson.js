@@ -22,7 +22,7 @@ module.exports = {
 			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' } },
 			content: [
 
-				/* История */
+
 				{
 					elem: 'section',
 					mix: { block: 'decorator',mods: { 'indent-b': 'xxxxxxl' } },
