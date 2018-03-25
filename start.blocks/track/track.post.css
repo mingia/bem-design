@@ -3,6 +3,9 @@
 
   &__buttons {
     display: flex;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
   }
 }
