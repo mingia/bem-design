@@ -31,7 +31,7 @@
   &_theme {
     &_islands {
       &::before {
-        background: none !important;
+        /* background: none !important; */
       }
     }
   }

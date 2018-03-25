@@ -1,5 +1,5 @@
 .track {
-  min-height: 400px;
+  min-height: 440px;
 
   &__buttons {
     display: flex;
