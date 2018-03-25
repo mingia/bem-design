@@ -20,6 +20,9 @@ module.exports = {
 
 		{
 			block: 'tpl-layout',
+			attrs: {
+				'style': 'background-color: var(--color-ghost);'
+			},
 			mix: { block: 'decorator',mods: { 'space-v': 'xxxxxxl' } },
 			content: [
 				{
@@ -33,6 +36,8 @@ module.exports = {
 								'style': 'width: 1008px;'
 							},
 							content: [
+
+						// -----MUSIC--------
 								{
 									block: 'tpl-grid',
 									mods: { columns: '12', 'col-gap': 'half', 'row-gap': 'full' },
@@ -42,13 +47,13 @@ module.exports = {
 										{
 											elem: 'fraction',
 											attrs: {
-												'style': 'background-color: var(--color-ghost);'
+												'style': 'background-color: var(--color-default);'
 											},
 											elemMods: { col: '4'},
 											content: [
 												{
 													block: 'play-list',
-													mix: { block: 'decorator', mods: { 'space-h': 'l' } },
+													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
 													content: [
 														{
 															elem: 'header',
@@ -243,13 +248,13 @@ module.exports = {
 										{
 											elem: 'fraction',
 											attrs: {
-												'style': 'background-color: var(--color-ghost);'
+												'style': 'background-color: var(--color-default);'
 											},
 											elemMods: { col: '4'},
 											content: [
 												{
 													block: 'album',
-													mix: { block: 'decorator', mods: { 'space-h': 'l' } },
+													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
 													content: [
 
 														{
@@ -425,6 +430,7 @@ module.exports = {
 											]
 										},
 
+									//TRACK
 										{
 											elem: 'fraction',
 											attrs: {
@@ -447,6 +453,7 @@ module.exports = {
 																},
 																{
 																	block: 'text',
+																	mix: { block: 'decorator', mods: { 'indent-t': 'xxl' } },
 																	mods: { view: 'primary', size: 'xl', weight: 'bold' },
 																	content: 'All Down Hill From Here'
 																},
@@ -488,7 +495,71 @@ module.exports = {
 													]
 												}
 											]
+										},
+
+
+
+								// -----INFORMER--------
+
+									//ALERT
+										{
+											elem: 'fraction',
+											attrs: {
+												'style': 'background-color: var(--color-default);'
+											},
+											elemMods: { col: '4'},
+											content: [
+												{
+													block: 'informer',
+													mix: { block: 'pt-card' },
+													content: [
+														{
+															elem: 'content',
+															mix: { block: 'pt-card', elem: 'content' },
+															content: [
+																{
+																	elem: 'icon-wrapper',
+																	content: {
+																		block: 'icon',
+																		mods: { 'minus': 'm-inverse' }
+																	}
+																},
+																{
+																	block: 'text',
+																	mods: { view: 'inverse', size: 'xxl', weight: 'bold', align: 'center' },
+																	content: 'Error'
+																},
+																{
+																	block: 'text',
+																	mods: { view: 'inverse', size: 'm', align: 'center' },
+																	content: 'Currently payments not available '
+																},
+																{
+																	elem: 'info',
+																	content: [
+
+																	]
+																}
+															]
+														},
+														{
+															elem: 'button',
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' } },
+															content: {
+																block: 'button',
+																mods: {
+													        theme: 'islands',
+													        size: 'xl',
+														    },
+																text: 'DONE'
+															}
+														}
+													]
+												}
+											]
 										}
+
+
 									]
 								}
 							]

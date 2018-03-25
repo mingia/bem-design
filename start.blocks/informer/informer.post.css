@@ -1,3 +1,4 @@
 .informer {
-
+  background-color: var(--color-alert);
+  min-height: 480px;
 }
