@@ -477,15 +477,15 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'icon',
-																			mods: { 'previous': 's-primary' },
+																			mods: { 'previous': 's-link' },
 																		},
 																		{
 																			block: 'icon',
-																			mods: { 'play': 's-primary' },
+																			mods: { 'play': 's-link' },
 																		},
 																		{
 																			block: 'icon',
-																			mods: { 'next': 's-primary' },
+																			mods: { 'next': 's-link' },
 																		},
 																	]
 																}
@@ -919,7 +919,7 @@ module.exports = {
 															mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
 															content: {
 																block: 'image',
-																url: '/assets/bem-starter-kit/publication.png'
+																url: '/assets/bem-starter-kit/article-preview.png'
 															}
 														}
 													]
