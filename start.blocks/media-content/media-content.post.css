@@ -1,0 +1,9 @@
+.media-content {
+	overflow: hidden;
+	&__wrap {
+		width: 100%;
+	}
+	&__info {
+		background: var(--color-default);
+	}
+}

@@ -1047,12 +1047,15 @@ module.exports = {
 														{
 															elem: 'cover',
 															content: [
-
+																{
+																	block: 'image',
+																	url: '/assets/bem-starter-kit/uncharted_vertical.jpg'
+																}
 															]
 														},
 														{
 															elem: 'info',
-															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l', 'indent-b': 'xs' } },
+															mix: { block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'l' } },
 															content: [
 																{
 																	block: 'text',
@@ -1083,7 +1086,7 @@ module.exports = {
 																	mods: { view: 'primary', size: 's' },
 																	content: 'Just visited the best beach for surfing. The waves are awesome.'
 																}
-															]
+															]	
 														},
 														{
 															elem: 'buy',
@@ -1202,7 +1205,7 @@ module.exports = {
 											elemMods: { col: '4'},
 											content: [
 												{
-													block: 'media',
+													block: 'media-content',
 													mix: { block: 'pt-card', mods: { view: 'default' } },
 													attrs: {
 														'style': 'height: 456px;'
@@ -1212,12 +1215,21 @@ module.exports = {
 															elem: 'cover',
 															mix: { block: 'pt-card', elem: 'content' },
 															content: [
-																'Uncharted 4'
+																{
+																	elem: 'photo',
+																	mix: { block: 'pt-card', elem: 'image', elemMods: { size: 'cover' } },
+																	content: [
+																		{
+																			block: 'image',
+																			url: '/assets/bem-starter-kit/uncharted_horizontal.jpg'
+																		}
+																	]
+																}
 															]
 														},
 														{
 															elem: 'info',
-															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l' } },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xl' } },
 															content: [
 																{
 																	elem: 'wrap',
@@ -1236,7 +1248,7 @@ module.exports = {
 																		},
 																		{
 																			block: 'text',
-																			mods: { view: 'primary', 'size': 'xl', align: 'center', weight: 'bold' },
+																			mods: { view: 'link', 'size': 'xl', align: 'center', weight: 'bold' },
 																			content: '$129'
 																		}
 																	]
