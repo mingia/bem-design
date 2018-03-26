@@ -1,6 +1,4 @@
 .friendlist {
-	/*padding: var(--space-m);*/
-
 	&__group {
 		display: flex;
 		flex-flow: row wrap;

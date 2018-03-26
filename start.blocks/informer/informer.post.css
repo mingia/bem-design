@@ -1,4 +1,5 @@
 .informer {
+  min-height: 480px;
   &_view {
     &_alert {
       background-color: var(--color-alert);
@@ -10,8 +11,6 @@
       background-color: var(--color-success);
     }
   }
-
-  min-height: 480px;
 
   &__icon-wrapper {
     width: 24px;

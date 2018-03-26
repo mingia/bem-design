@@ -1,3 +1,7 @@
 .product {
+	&__cover {
+		height: 160px;
+		background: #027EFF;
 
+	}
 }

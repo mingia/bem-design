@@ -1,5 +1,5 @@
 .auth {
-
+	background: var(--color-default);
 	&__header {
 		padding-top: var(--space-xxl);
 		height: 146px;
