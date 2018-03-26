@@ -3436,70 +3436,124 @@ module.exports = {
 									block: 'tpl-grid',
 									mods: { columns: '12', 'col-gap': 'half', 'row-gap': 'full' },
 									content: [
+																			//PRODUCT-FOLD
 										{
 											elem: 'fraction',
 											elemMods: { col: '4'},
 											content: [
 												{
-													block: 'ecommerce',
-													mix: { block: 'unit' },
+													block: 'product',
+													mix: { block: 'pt-card' },
 													content: [
 														{
-															block: 'text',
-															mods: { view: 'inverse', 'size': 'm' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-															content: '.ecommerce (category list)'
+															elem: 'footer',
+															elemMods: { state: 'fold' },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l', align: 'between', 'vertical-align': 'bottom' } },
+															content: [
+																{
+																	elem: 'about',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xl', weight: 'black', display: 'inline-block' },
+																			content: '$'
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'primary', size: 'xxxxl' ,weight: 'black', display: 'inline-block' },
+																			content: '79'
+																		},
+																		{
+																			block: 'text',
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																			mods: { view: 'secondary', size: 'm' },
+																			content: 'Jeans skinny jacket by Levi Brand'
+																		},
+																		{
+																			block: 'button',
+																			mods: { theme: 'islands', size: 'l' },
+																			text: 'CHOOSE SIZE'
+																		}
+																	]
+																},
+																{
+																	elem: 'icon',
+																 	elemMods: { 'indent-right': 's' },
+																 	attrs: { 'style': 'padding: var(--space-xs); background-color: #006CF4; background-size: 16px; border-radius: 50%;' },
+																 	mix: { block: 'icon', mods: { 'fave-1': 's-inverse' } }
+																},
+															]
 														},
+
 														{
-															block: 'text',
-															mods: { view: 'alert', 'size': 'm' },
-															content: '.pt-list'
+															elem: 'image',
+															mix: { block: 'pt-card', elem: 'image' },
+															content: {
+																block: 'image',
+																url: '/assets/bem-starter-kit/ecommerce-product.png'
+															}
 														}
 													]
 												}
 											]
 										},
+
+									//PRODUCT-UNFOLD
 										{
 											elem: 'fraction',
 											elemMods: { col: '4'},
 											content: [
 												{
-													block: 'ecommerce',
-													mix: { block: 'unit' },
+													block: 'product',
+													mix: { block: 'pt-card' },
 													content: [
 														{
-															block: 'text',
-															mods: { view: 'inverse', 'size': 'm' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-															content: '.ecommerce (category)'
+															elem: 'footer',
+															elemMods: { state: 'unfold' },
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'l', align: 'between', 'vertical-align': 'bottom' } },
+															content: [
+																{
+																	elem: 'about',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { view: 'inverse', size: 'xl', weight: 'black', display: 'inline-block' },
+																			content: '$'
+																		},
+																		{
+																			block: 'text',
+																			mods: { view: 'inverse', size: 'xxxxl' ,weight: 'black', display: 'inline-block' },
+																			content: '79'
+																		},
+																		{
+																			block: 'text',
+																			mix: { block: 'decorator', mods: { 'indent-b': 's' } },
+																			mods: { view: 'inverse', size: 'm' },
+																			content: 'Jeans skinny jacket by Levi Brand'
+																		},
+																		{
+																			block: 'button',
+																			mods: { theme: 'islands', size: 'l' },
+																			text: 'BUY'
+																		}
+																	]
+																},
+																{
+																	elem: 'icon',
+																 	elemMods: { 'indent-right': 's' },
+																 	attrs: { 'style': 'padding: var(--space-xs); background-color: #006CF4; background-size: 16px; border-radius: 50%;' },
+																 	mix: { block: 'icon', mods: { 'fave-1': 's-inverse' } }
+																},
+															]
 														},
+
 														{
-															block: 'text',
-															mods: { view: 'alert', 'size': 'm' },
-															content: '.pt-list'
-														}
-													]
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '4'},
-											content: [
-												{
-													block: 'ecommerce',
-													mix: { block: 'unit' },
-													content: [
-														{
-															block: 'text',
-															mods: { view: 'inverse', 'size': 'm' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-															content: '.ecommerce (product)'
-														},
-														{
-															block: 'text',
-															mods: { view: 'alert', 'size': 'm' },
-															content: '.pt-card'
+															elem: 'image',
+															mix: { block: 'pt-card', elem: 'image' },
+															content: {
+																block: 'image',
+																url: '/assets/bem-starter-kit/ecommerce-product.png'
+															}
 														}
 													]
 												}
