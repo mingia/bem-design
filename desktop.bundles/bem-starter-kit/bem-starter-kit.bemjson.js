@@ -667,9 +667,9 @@ module.exports = {
 											content: [
 												{
 													block: 'payment',
-													mix: [ 
+													mix: [
 														{ block: 'decorator', mods: { 'space-a': 'xl' } },
-														{ block: 'pt-list', mods: { 'view': 'default' } }, 
+														{ block: 'pt-list', mods: { 'view': 'default' } },
 													],
 													attrs: { style: 'height: 456px; overflow: hidden;'},
 													content: [
@@ -1041,7 +1041,7 @@ module.exports = {
 											elemMods: { col: '4'},
 											content: [
 												{
-													block: 'product',
+													block: 'digital-product',
 													mix: { block: 'pt-list', mods: { 'view': 'default' } },
 													content: [
 														{
@@ -1086,7 +1086,7 @@ module.exports = {
 																	mods: { view: 'primary', size: 's' },
 																	content: 'Just visited the best beach for surfing. The waves are awesome.'
 																}
-															]	
+															]
 														},
 														{
 															elem: 'buy',
@@ -1205,7 +1205,7 @@ module.exports = {
 											elemMods: { col: '4'},
 											content: [
 												{
-													block: 'media-content',
+													block: 'digital-item',
 													mix: { block: 'pt-card', mods: { view: 'default' } },
 													attrs: {
 														'style': 'height: 456px;'
@@ -4678,6 +4678,6 @@ module.exports = {
 
 			]
 		}
-		
+
 	]
 };
