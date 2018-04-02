@@ -14,7 +14,7 @@ module.exports = {
 	mods: { theme: 'islands' },
 	mix: {
 		block: 'theme',
-		mods: { color: 'default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
+		mods: { color: 'custom', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
 	},
 	content: [
 
@@ -960,7 +960,6 @@ module.exports = {
 																}
 															]
 														}
-
 
 													]
 												}
@@ -3264,15 +3263,13 @@ module.exports = {
 												}
 											]
 										},
-
-									//ALERT
 										{
 											elem: 'fraction',
 											elemMods: { col: '4'},
 											content: [
 												{
 													block: 'informer',
-													mods: { view: 'warn' },
+													mods: { view: 'warning' },
 													mix: { block: 'pt-card' },
 													content: [
 														{
@@ -3348,8 +3345,6 @@ module.exports = {
 												}
 											]
 										},
-
-									//SUCCESS
 										{
 											elem: 'fraction',
 											elemMods: { col: '4'},
@@ -3404,7 +3399,10 @@ module.exports = {
 															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' } },
 															content: {
 																block: 'button',
-																mods: { theme: 'islands', view: 'normal', size: 'xl',  },
+																mods: { 
+																	theme: 'islands', 
+																	size: 'xl'  
+																},
 																text: 'DONE'
 															}
 														}
@@ -4437,7 +4435,7 @@ module.exports = {
 															content: [
 																{
 																	block: 'button',
-																	mods: { theme: 'islands', size: 'l', view: 'action', width: 'full' },
+																	mods: { theme: 'islands', size: 'l', width: 'full' },
 																	text: 'Choose month plan'
 																}
 															]

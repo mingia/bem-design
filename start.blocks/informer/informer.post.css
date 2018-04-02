@@ -4,8 +4,8 @@
     &_alert {
       background-color: var(--color-alert);
     }
-    &_warn {
-      background-color: var(--color-warn);
+    &_warning {
+      background-color: var(--color-warning);
     }
     &_success {
       background-color: var(--color-success);
