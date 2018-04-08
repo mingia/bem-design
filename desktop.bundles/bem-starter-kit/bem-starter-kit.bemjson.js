@@ -3094,18 +3094,248 @@ module.exports = {
 											content: [
 												{
 													block: 'answer',
-													mix: { block: 'unit' },
+													mix: { block: 'pt-card' },
 													content: [
 														{
-															block: 'text',
-															mods: { view: 'inverse', 'size': 'm' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-															content: '.answer'
+															elem: 'content',
+															mix: { block: 'pt-card', elem: 'content', elemMods: { 'space-h': 'xxl', 'space-v': 'xxxxl' } },
+															content: [
+																{
+																	block: 'pt-icon-plus',
+																	mix: { block: 'decorator', mods: { 'indent-b': 'xl' } },
+																	mods: { 'vertical-align': 'center' },
+																	content: [
+																		{
+																			elem: 'icon',
+																			elemMods: { 'indent-right': 's' },
+																			content: [
+																				{
+																					block: 'pt-avatar',
+																					content: {
+																						elem: 'photo',
+																						elemMods: { size: 's' }
+																					}
+																				}
+																			]
+																		},
+																		{
+																			elem: 'block',
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'inverse', weight: 'bold' },
+																					content: 'Luke Appleyard'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 'xs', view: 'inverse', },
+																					content: '@lukeappeyard'
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	block: 'text',
+																	mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+																	mods: { size: 'xl', view: 'inverse', weight: 'black' },
+																	content: [
+																		'No individual colour making up this wave travels ',
+																		{
+																			block: 'text',
+																			mods: { weight: 'light', display: 'inline' },
+																			content: 'faster than the grid lines, but the sum of all components appears to outrace the grid.  This is how “group velocities” can exceed the speed of light without carrying information.'
+																		}
+																	]
+																}
+															]
+														},
+														{
+															elem: 'logo',
+															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-b': 'l', 'space-h': 'xxl' } },
+															content: {
+																block: 'social-icon',
+																mods: { size: 'm', clear: 'twitter-inverse' }
+															}
+														}
+													]
+												}
+											]
+										},
+										{
+											elem: 'fraction',
+											attrs: {
+												'style': 'background-color: var(--color-default);'
+											},
+											elemMods: { col: '4'},
+											content: [
+												{
+													block: 'comments',
+													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
+													content: [
+														{
+															block: 'icon',
+															mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' } },
+															mods: { 'arrow-left': 's-primary' }
 														},
 														{
 															block: 'text',
-															mods: { view: 'alert', 'size': 'm' },
-															content: '.pt-icon-plus'
+															mix: { block: 'decorator', mods: { 'indent-b': 'xs' } },
+															mods: { size: 'xxxl', view: 'primary', weight: 'black', },
+															content: 'This is a slow roll: silicon valley insiders '
+														},
+														{
+															block: 'text',
+															mix: { block: 'decorator', mods: { 'indent-b': 'l' } },
+															mods: { size: 'm', view: 'primary' },
+															content: 'The scandal, the latest in Facebook’s tortured history with privacy concerns, has eroded the potential for any of the company’s leaders to ever credibly run for public office'
+														},
+														{
+															block: 'pt-icon-plus',
+															mods: { 'vertical-align': 'center' },
+															content: [
+																{
+																	elem: 'icon',
+																	elemMods: { 'indent-right': 's'},
+																	content: {
+																		block: 'pt-avatar',
+																		content: {
+																			elem: 'photo',
+																			elemMods: { size: 's' }
+																		}
+																	}
+																},
+																{
+																	elem: 'block',
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'm', view: 'primary', weight: 'bold', display: 'inline' },
+																			content: 'Hive '
+																		},
+																		{
+																			block: 'text',
+																			mods: { size: 'm', view: 'primary', weight: 'light', display: 'inline' },
+																			content: 'Nick Bilton'
+																		}
+																	]
+																}
+															]
+														},
+														{
+															block: 'comments-section',
+															content: [
+																{
+																	elem: 'header',
+																	mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																	content: [
+																		{
+																			block: 'text',
+																			mods: { size: 'xl', view: 'primary', weight: 'black', },
+																			content: '20 Comments'
+																		},
+																		{
+																			block: 'text',
+																			tag: 'a',
+																			attrs: { href: ''},
+																			mods: { size: 's', view: 'link', },
+																			content: 'Sort by Best'
+																		}
+																	]
+																},
+																{
+																	block: 'textarea',
+																	mods: { theme: 'islands', size: 'm' },
+																	placeholder : 'Ваш текст должен быть здесь'
+																},
+																{
+																	block: 'comment',
+																	content: [
+																		{
+																			block: 'pt-icon-plus',
+																			mods: { 'vertical-align': 'top' },
+																			content: [
+																				{
+																					elem: 'icon',
+																					elemMods: { 'indent-right': 's'},
+																					content: {
+																						block: 'pt-avatar',
+																						content: {
+																							elem: 'photo',
+																							elemMods: { size: 's' }
+																						}
+																					}
+																				},
+																				{
+																					elem: 'block',
+																					content: [
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'link', weigh: 'bold' },
+																							content: 'Broun Andvild'
+																						},
+																						{
+																							block: 'text',
+																							mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																							mods: { size: 'xs', view: 'ghost' },
+																							content: '5h ago'
+																						},
+																						{
+																							block: 'text',
+																							mods: { size: 's', view: 'primary', weight: 'light' },
+																							content: 'Just visited the best beach for surfing. The waves are awesome.'
+																						},
+																						{
+																							elem: 'answers',
+																							mix: { block: 'decorator', mods: { 'indent-t': 'xxl' } },
+																							content: [
+																								{
+																									block: 'pt-icon-plus',
+																									mods: { 'vertical-align': 'top' },
+																									content: [
+																										{
+																											elem: 'icon',
+																											elemMods: { 'indent-right': 's'},
+																											content: {
+																												block: 'pt-avatar',
+																												content: {
+																													elem: 'photo',
+																													elemMods: { size: 's' }
+																												}
+																											}
+																										},
+																										{
+																											elem: 'block',
+																											content: [
+																												{
+																													block: 'text',
+																													mods: { size: 's', view: 'link', weigh: 'bold' },
+																													content: 'Shervy Jonson'
+																												},
+																												{
+																													block: 'text',
+																													mix: { block: 'decorator', mods: { 'indent-b': 'm' } },
+																													mods: { size: 'xs', view: 'ghost' },
+																													content: '5h ago'
+																												},
+																												{
+																													block: 'text',
+																													mods: { size: 's', view: 'primary', weight: 'light' },
+																													content: 'Just visited the best beach for surfing. The waves are awesome.'
+																												},
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
 														}
 													]
 												}
@@ -3119,40 +3349,7 @@ module.exports = {
 													block: 'comment',
 													mix: { block: 'unit' },
 													content: [
-														{
-															block: 'text',
-															mods: { view: 'inverse', 'size': 'm' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-															content: '.comment'
-														},
-														{
-															block: 'text',
-															mods: { view: 'alert', 'size': 'm' },
-															content: '.pt-icon-plus'
-														}
-													]
-												}
-											]
-										},
-										{
-											elem: 'fraction',
-											elemMods: { col: '4'},
-											content: [
-												{
-													block: 'comments',
-													mix: { block: 'unit' },
-													content: [
-														{
-															block: 'text',
-															mods: { view: 'inverse', 'size': 'm' },
-															mix: { block: 'decorator', mods: { 'indent-b': 'xxs' } },
-															content: '.comments'
-														},
-														{
-															block: 'text',
-															mods: { view: 'alert', 'size': 'm' },
-															content: '.pt-list'
-														}
+
 													]
 												}
 											]
@@ -3399,9 +3596,9 @@ module.exports = {
 															mix: { block: 'pt-card', elem: 'footer', elemMods: { 'space-a': 'xxl', align: 'center' } },
 															content: {
 																block: 'button',
-																mods: { 
-																	theme: 'islands', 
-																	size: 'xl'  
+																mods: {
+																	theme: 'islands',
+																	size: 'xl'
 																},
 																text: 'DONE'
 															}
