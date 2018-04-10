@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'BEM Vectors',
+	title: 'BEM Design',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
