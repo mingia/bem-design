@@ -64,7 +64,7 @@
   },
   "scripts": {
     "test": "enb make && enb make clean && gulp",
-    "start": "enb server",
+    "start": "(find *.css node_modules/bem-animations node_modules/bem-icons node_modules/bem-illustrations node_modules/bem-layouts node_modules/bem-logos node_modules/bem-patterns node_modules/bem-social node_modules/bem-themes node_modules/bem-typo node_modules/bem-vectors -print | sort > library-state.file) && enb server",
     "build": "enb make"
   },
   "private": true
