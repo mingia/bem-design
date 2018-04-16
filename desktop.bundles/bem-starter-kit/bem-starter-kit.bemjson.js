@@ -12,10 +12,16 @@ module.exports = {
 	],
 	scripts: [{ elem: 'js', url: 'bem-starter-kit.min.js' }],
 	mods: { theme: 'islands' },
-	mix: {
-		block: 'theme',
-		mods: { color: 'custom', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'museo' }
-	},
+	mix: [
+		{
+			block: 'theme',
+			mods: { color: 'liquid-default', space: 'default', size: 'default', gap: 'small', menu: 'default', font: 'ibm' }
+		},
+		{
+			block: 'component',
+			mods: { liquid: 'default' }
+		}
+	],
 	content: [
 
 		{
@@ -493,8 +499,8 @@ module.exports = {
 															content: [
 																{
 																	block: 'button',
-																	mods: { theme: 'islands', size: 'xl', view: 'action', width: 'full' },
-																	content: 'Pay $120'
+																	mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
+																	text: 'Pay $120',
 																}
 															]
 														}
@@ -552,7 +558,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															block: 'pt-list',
 															elem: 'item',
@@ -616,7 +621,7 @@ module.exports = {
 																									block: 'text',
 																									mods: { view: 'link', size: 's', weight: 'bold' },
 																									content: 'Yandex Money'
-																								},
+																								}
 																							]
 																						},
 																						{
@@ -627,7 +632,7 @@ module.exports = {
 																					]
 																				}
 																			]
-																		},
+																		}
 																	]
 																},
 																{
@@ -652,8 +657,8 @@ module.exports = {
 															content: [
 																{
 																	block: 'button',
-																	mods: { theme: 'islands', size: 'xl', view: 'action', width: 'full' },
-																	content: 'Pay $120'
+																	mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
+																	text: 'Pay $120',
 																}
 															]
 														}
@@ -686,7 +691,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															block: 'pt-form',
 															mods: { view: 'default' },
@@ -704,7 +708,7 @@ module.exports = {
 																		{
 																			block: 'input',
 																			mods: { theme: 'islands', width: 'available', size: 'xl'},
-																			val: '3023281048110009',
+																			val: '3023281048110009'
 																		}
 																	]
 																},
@@ -720,7 +724,7 @@ module.exports = {
 																		{
 																			block: 'input',
 																			mods: { theme: 'islands', width: 'available', size: 'xl'},
-																			val: '6-10',
+																			val: '6-10'
 																		}
 																	]
 																},
@@ -736,7 +740,7 @@ module.exports = {
 																		{
 																			block: 'input',
 																			mods: { theme: 'islands', width: 'available', size: 'xl'},
-																			val: 'RUB',
+																			val: 'RUB'
 																		}
 																	]
 																},
@@ -744,12 +748,12 @@ module.exports = {
 																	elem: 'item',
 																	content: {
 																		block: 'button',
-																		mods: { theme: 'islands', width: 'full', size: 'xl', view: 'action' },
-																		text: 'Facebook',
-																	},
-																},
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
+																		text: 'FACEBOOK'
+																	}
+																}
 															]
-														},
+														}
 													]
 												}
 											]
@@ -804,7 +808,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															block: 'pt-list',
 															elem: 'item',
@@ -861,7 +864,7 @@ module.exports = {
 																									block: 'input',
 																									mods: { theme: 'islands', width: 'available', size: 'xl'},
 																									mix: { block: 'decorator', mods: { 'indent-v': 'l'}},
-																									placeholder: 'Card number',
+																									placeholder: 'Card number'
 																								},
 																								{
 																									elem: 'card-info',
@@ -871,7 +874,7 @@ module.exports = {
 																											block: 'input',
 																											mods: { theme: 'islands', size: 'xl'},
 																											mix: { block: 'decorator', mods: { 'indent-r': 's'}},
-																											placeholder: 'MM',
+																											placeholder: 'MM'
 																										},
 																										{
 																											block: 'text',
@@ -883,14 +886,14 @@ module.exports = {
 																											block: 'input',
 																											mods: { theme: 'islands', size: 'xl'},
 																											mix: { block: 'decorator', mods: { 'indent-r': 's'}},
-																											placeholder: 'YR',
+																											placeholder: 'YR'
 																										},
 																										{
 																											block: 'input',
 																											mods: { theme: 'islands', size: 'xl'},
 																											attrs: { style: 'align-self: flex-end'},
-																											placeholder: 'CVV',
-																										},
+																											placeholder: 'CVV'
+																										}
 																									]
 																								}
 																							]
@@ -914,7 +917,7 @@ module.exports = {
 																											block: 'text',
 																											mods: { view: 'link', size: 's', weight: 'bold' },
 																											content: 'Yandex Money'
-																										},
+																										}
 																									]
 																								},
 																								{
@@ -930,7 +933,6 @@ module.exports = {
 																		},
 																	]
 																},
-
 																{
 																	block: 'text',
 																	mods: { view: 'primary', weight: 'bold', size: 's' },
@@ -945,8 +947,6 @@ module.exports = {
 																}
 															]
 														},
-
-
 														{
 															block: 'pt-list',
 															elem: 'item',
@@ -955,8 +955,8 @@ module.exports = {
 															content: [
 																{
 																	block: 'button',
-																	mods: { theme: 'islands', size: 'xl', view: 'action', width: 'full' },
-																	content: 'Pay $120'
+																	mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
+																	text: 'Pay $120'
 																}
 															]
 														}
@@ -1330,14 +1330,12 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															block: 'text',
 															mix: { block: 'decorator', mods: { 'indent-v': 'm' } },
 															mods: { view: 'primary', size: 'xs' },
 															content: 'Here’s a shining example of an Inspired By playlist based around an album. With Kanye West performing his melancholy, Auto-Tune–heavy 2008 album in full lately, it’s worth taking a look at its influence on Drake, Lorde, the xx, and Raury.'
 														},
-
 														{
 															elem: 'playlist',
 															mix: { block: 'pt-list' },
@@ -1368,7 +1366,7 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'London',
+																							content: 'London'
 																						},
 																						{
 																							block: 'text',
@@ -1412,7 +1410,7 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'London',
+																							content: 'London'
 																						},
 																						{
 																							block: 'text',
@@ -1430,8 +1428,6 @@ module.exports = {
 																		}
 																	]
 																},
-
-															// TRACK-3
 																{
 																	elem: 'track',
 																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } },
@@ -1473,8 +1469,7 @@ module.exports = {
 																			content: '4:20'
 																		}
 																	]
-																},
-
+																}
 															]
 														}
 													]
@@ -1492,7 +1487,6 @@ module.exports = {
 													block: 'album',
 													mix: { block: 'decorator', mods: { 'space-a': 'l' } },
 													content: [
-
 														{
 															block: 'image',
 															mix: [
@@ -1523,13 +1517,11 @@ module.exports = {
 															elem: 'playlist',
 															mix: { block: 'pt-list' },
 															content : [
-
-															// TRACK-1
 																{
 																	elem: 'track',
 																	mix: [
 																		{ block: 'decorator', mods: { 'indent-t': 's' } },
-																		{ block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } },
+																		{ block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } }
 																	],
 																	content: [
 																		{
@@ -1552,7 +1544,7 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'London',
+																							content: 'London'
 																						},
 																						{
 																							block: 'text',
@@ -1570,8 +1562,6 @@ module.exports = {
 																		}
 																	]
 																},
-
-															// TRACK-2
 																{
 																	elem: 'track',
 																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } },
@@ -1596,7 +1586,7 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'London',
+																							content: 'London'
 																						},
 																						{
 																							block: 'text',
@@ -1614,8 +1604,6 @@ module.exports = {
 																		}
 																	]
 																},
-
-															// TRACK-3
 																{
 																	elem: 'track',
 																	mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'between', 'vertical-align': 'center', 'space-v': 'xs' } },
@@ -1640,7 +1628,7 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-																							content: 'London',
+																							content: 'London'
 																						},
 																						{
 																							block: 'text',
@@ -1657,8 +1645,7 @@ module.exports = {
 																			content: '4:20'
 																		}
 																	]
-																},
-
+																}
 															]
 														}
 													]
@@ -1683,7 +1670,7 @@ module.exports = {
 																{
 																	block: 'image',
 																	mix: { block: 'playlist-cover', mods: { size: 'big' } },
-																	url: '/assets/bem-starter-kit/music-album-cover.png',
+																	url: '/assets/bem-starter-kit/music-album-cover.png'
 																},
 																{
 																	block: 'text',
@@ -1721,7 +1708,7 @@ module.exports = {
 																		{
 																			block: 'icon',
 																			mods: { 'next': 's-link' },
-																		},
+																		}
 																	]
 																}
 															]
@@ -2169,7 +2156,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															elem: 'item',
 															mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'default', 'space-a': 's' }},
@@ -2211,7 +2197,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															elem: 'item',
 															mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'default', 'space-a': 's' }},
@@ -2253,7 +2238,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															elem: 'item',
 															mix: { block: 'pt-list', elem: 'item', elemMods: { distribute: 'default', 'space-a': 's' }},
@@ -2462,7 +2446,7 @@ module.exports = {
 																	]
 																}
 															]
-														},
+														}
 													]
 												}
 											]
@@ -2819,7 +2803,7 @@ module.exports = {
 																	content: [
 																		{
 																			block: 'button',
-																			mods: { theme: 'islands', size: 'l', view: 'action', width: 'full' },
+																			mods: { theme: 'islands', size: 'l', view: 'action', width: 'available' },
 																			text: 'Choose month plan'
 																		}
 																	]
@@ -3063,7 +3047,7 @@ module.exports = {
 													]
 												}
 											]
-										},
+										}
 									]
 								}
 							]
@@ -3451,7 +3435,8 @@ module.exports = {
 																block: 'button',
 																mods: {
 													        theme: 'islands',
-													        size: 'xl',
+																	size: 'xl',
+																	width: 'available'
 														    },
 																text: 'DONE'
 															}
@@ -3533,7 +3518,8 @@ module.exports = {
 																block: 'button',
 																mods: {
 													        theme: 'islands',
-													        size: 'xl',
+																	size: 'xl',
+																	width: 'available'
 														    },
 																text: 'DONE'
 															}
@@ -3598,7 +3584,8 @@ module.exports = {
 																block: 'button',
 																mods: {
 																	theme: 'islands',
-																	size: 'xl'
+																	size: 'xl',
+																	width: 'available'
 																},
 																text: 'DONE'
 															}
@@ -3631,7 +3618,7 @@ module.exports = {
 									block: 'tpl-grid',
 									mods: { columns: '12', 'col-gap': 'half', 'row-gap': 'full' },
 									content: [
-																			//PRODUCT-FOLD
+										//PRODUCT-FOLD
 										{
 											elem: 'fraction',
 											elemMods: { col: '4'},
@@ -3679,7 +3666,6 @@ module.exports = {
 																},
 															]
 														},
-
 														{
 															elem: 'image',
 															mix: { block: 'pt-card', elem: 'image' },
@@ -3692,8 +3678,6 @@ module.exports = {
 												}
 											]
 										},
-
-									//PRODUCT-UNFOLD
 										{
 											elem: 'fraction',
 											elemMods: { col: '4'},
@@ -3738,10 +3722,9 @@ module.exports = {
 																 	elemMods: { 'indent-right': 's' },
 																 	attrs: { 'style': 'padding: var(--space-xs); background-color: #006CF4; background-size: 16px; border-radius: 50%;' },
 																 	mix: { block: 'icon', mods: { 'fave-1': 's-inverse' } }
-																},
+																}
 															]
 														},
-
 														{
 															elem: 'image',
 															mix: { block: 'pt-card', elem: 'image' },
@@ -3804,7 +3787,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															block: 'pt-form',
 															mods: { view: 'default' },
@@ -3816,8 +3798,8 @@ module.exports = {
 																	content: {
 																		block: 'input',
 																		mods: { theme: 'islands', width: 'available', size: 'xl'},
-																		placeholder: 'Username',
-																	},
+																		placeholder: 'Username'
+																	}
 																},
 																{
 																	elem: 'item',
@@ -3825,38 +3807,36 @@ module.exports = {
 																	content: {
 																		block: 'input',
 																		mods: { theme: 'islands', width: 'available', size: 'xl'},
-																		placeholder: 'Password',
-																	},
+																		placeholder: 'Password'
+																	}
 																},
-
 																{
 																	elem: 'item',
 																	elemMods: { 'indent-b': 's' },
 																	content: {
 																		block: 'button',
-																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-																		text: 'Sign in',
-																	},
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
+																		text: 'Sign in'
+																	}
 																},
 																{
 																	elem: 'item',
 																	elemMods: { 'indent-b': 'm' },
 																	content: {
 																		block: 'button',
-																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-																		text: 'Facebook',
-																	},
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
+																		text: 'Facebook'
+																	}
 																},
 																{
 																	elem: 'item',
 																	content: {
-																		block: 'text', mods: { view: 'link', size: 's', align: 'center' },
+																		block: 'text', mods: { view: 'link', size: 's', align: 'center', width: 'available' },
 																		content: 'Signup'
 																	}
 																}
 															]
-														},
-
+														}
 													]
 												}
 											]
@@ -3887,7 +3867,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															block: 'pt-form',
 															mods: { view: 'default' },
@@ -3899,8 +3878,8 @@ module.exports = {
 																	content: {
 																		block: 'input',
 																		mods: { theme: 'islands', width: 'available', size: 'xl'},
-																		placeholder: 'Username',
-																	},
+																		placeholder: 'Username'
+																	}
 																},
 																{
 																	elem: 'item',
@@ -3908,27 +3887,26 @@ module.exports = {
 																	content: {
 																		block: 'input',
 																		mods: { theme: 'islands', width: 'available', size: 'xl'},
-																		placeholder: 'Password',
-																	},
+																		placeholder: 'Password'
+																	}
 																},
-
 																{
 																	elem: 'item',
 																	elemMods: { 'indent-b': 's' },
 																	content: {
 																		block: 'button',
-																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-																		text: 'Sign up',
-																	},
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available'  },
+																		text: 'Sign up'
+																	}
 																},
 																{
 																	elem: 'item',
 																	elemMods: { 'indent-b': 'm' },
 																	content: {
 																		block: 'button',
-																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-																		text: 'Facebook',
-																	},
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action', width: 'available' },
+																		text: 'Facebook'
+																	}
 																},
 																{
 																	elem: 'item',
@@ -3938,8 +3916,7 @@ module.exports = {
 																	}
 																}
 															]
-														},
-
+														}
 													]
 												}
 											]
@@ -3970,7 +3947,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															block: 'pt-form',
 															mods: { view: 'default' },
@@ -3981,22 +3957,20 @@ module.exports = {
 																	elemMods: { 'indent-b': 'l' },
 																	content: {
 																		block: 'input',
-																		mods: { theme: 'islands', width: 'available', size: 'xl'},
-																		placeholder: 'Username',
-																	},
+																		mods: { theme: 'islands', width: 'available', size: 'xl' },
+																		placeholder: 'Username'
+																	}
 																},
-
 																{
 																	elem: 'item',
 																	content: {
 																		block: 'button',
-																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action' },
-																		text: 'Reset',
-																	},
-																},
+																		mods: { theme: 'islands', width: 'full', size: 'l', view: 'action',  width: 'available' },
+																		text: 'Reset'
+																	}
+																}
 															]
-														},
-
+														}
 													]
 												}
 											]
@@ -4025,13 +3999,12 @@ module.exports = {
 									block: 'tpl-grid',
 									mods: { columns: '12', 'col-gap': 'half', 'row-gap': 'full' },
 									content: [
-																			{
+										{
 											elem: 'fraction',
 											elemMods: { col: '4'},
 											content: [
 												{
 													block: 'feed',
-													attrs: { style: ' ' },
 													mix: { block: 'pt-list', mods: { view: 'ghost' } },
 													content: [
 														{
@@ -4043,7 +4016,7 @@ module.exports = {
 																	elemMods: { align: 'center' },
 																	mix: [
 																		{ block: 'pt-list', elem: 'item', elemMods: { 'distribute': 'between' }},
-																		{ block: 'decorator', mods: { 'indent-b': 'm' }},
+																		{ block: 'decorator', mods: { 'indent-b': 'm' }}
 																	],
 																	content: [
 																		{
@@ -4140,7 +4113,6 @@ module.exports = {
 																}
 															]
 														},
-
 														{
 															elem: 'item',
 															mix: [{ block: 'pt-list', elem: 'item', elemMods: { 'space-a': 'm' }}, { block: 'decorator', mods: { 'indent-b': 's' } }],
@@ -4150,7 +4122,7 @@ module.exports = {
 																	elemMods: { align: 'center' },
 																	mix: [
 																		{ block: 'pt-list', elem: 'item', elemMods: { 'distribute': 'between' }},
-																		{ block: 'decorator', mods: { 'indent-b': 'm' }},
+																		{ block: 'decorator', mods: { 'indent-b': 'm' }}
 																	],
 																	content: [
 																		{
@@ -4181,7 +4153,6 @@ module.exports = {
 																						{
 																							block: 'text',
 																							mods: { view: 'primary', size: 's', weight: 'semibold' },
-
 																							content: 'Tony Montana'
 																						},
 																						{
@@ -4214,7 +4185,7 @@ module.exports = {
 																			elemMods: { align: 'baseline' },
 																			mix: [
 																				{ block: 'pt-list', elem: 'item', elemMods: { 'distribute': 'between' }},
-																				{ block: 'decorator', mods: { 'indent-b': 'm' }},
+																				{ block: 'decorator', mods: { 'indent-b': 'm' }}
 																			],
 																			content: [
 																				{
@@ -4230,7 +4201,7 @@ module.exports = {
 																							mods: { view: 'secondary', size: 'xs' },
 																							content: '5h ago'
 																						}
-																					],
+																					]
 																				},
 																				{
 																					block: 'text',
@@ -4355,7 +4326,6 @@ module.exports = {
 																		}
 																	]
 																},
-
 																{
 																	block: 'dots',
 																	mix: { block: 'decorator', mods: { 'indent-t': 'm', 'indent-b': 'xl' } },
@@ -4368,14 +4338,12 @@ module.exports = {
 																		]
 																	}
 																},
-
 																{
 																	block: 'text',
 																	mods: { view: 'primary', size: 'xl', weight: 'bold' },
 																	mix: { block: 'decorator', mods: { 'indent-l': 'l', 'indent-b': 'xxs'}},
 																	content: 'Settings'
 																},
-
 																{
 																	block: 'pt-list',
 																	mods: { view: 'default' },
@@ -4467,11 +4435,9 @@ module.exports = {
 																					}
 																				}
 																			]
-																		},
-
+																		}
 																	]
 																}
-
 															]
 														}
 													]
@@ -4632,7 +4598,7 @@ module.exports = {
 															content: [
 																{
 																	block: 'button',
-																	mods: { theme: 'islands', size: 'l', width: 'full' },
+																	mods: { theme: 'islands', size: 'l', width: 'available' },
 																	text: 'Choose month plan'
 																}
 															]
@@ -4771,7 +4737,7 @@ module.exports = {
 															content: [
 																{
 																	block: 'button',
-																	mods: { theme: 'islands', size: 'l', view: 'action', width: 'full' },
+																	mods: { theme: 'islands', size: 'l', view: 'action', width: 'available' },
 																	text: 'Choose month plan'
 																}
 															]
@@ -4908,7 +4874,7 @@ module.exports = {
 															content: [
 																{
 																	block: 'button',
-																	mods: { theme: 'islands', size: 'l', view: 'action', width: 'full' },
+																	mods: { theme: 'islands', size: 'l', view: 'action', width: 'available' },
 																	text: 'Choose month plan'
 																}
 															]
@@ -4927,6 +4893,5 @@ module.exports = {
 
 			]
 		}
-
 	]
 };
