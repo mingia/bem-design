@@ -1,6 +1,6 @@
 module.exports = {
 	block: 'page',
-	title: 'BEM Start',
+	title: 'NIM Yoga',
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -17,6 +17,42 @@ module.exports = {
 		mods: { color: 'default', space: 'default', size: 'default' }
 	},
 	content: [
-		'dsdsdsds'
+		{
+			block: 'text',
+			mods: { view: 'secondary' },
+			content: 'dd'
+		},
+		// контент
+		{
+			block: 'header',
+			content: [
+				'bsbbsbsbs',
+				{
+					elem: 'logo',
+				},
+				{
+					elem: 'menu-button'
+				}
+			]
+		},
+		{
+			block: 'heading',
+			content: [
+				'bsbbbsss',
+				{
+					elem: 'cover',
+					content: [
+
+					]
+				}
+			]
+		},
+		{
+			block: 'intro',
+			content: [
+
+			]
+		}	
+	// контент
 	]
 };
