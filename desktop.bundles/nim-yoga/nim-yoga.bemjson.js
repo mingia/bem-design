@@ -17,41 +17,35 @@ module.exports = {
 		mods: { color: 'default', space: 'default', size: 'default' }
 	},
 	content: [
-		{
-			block: 'text',
-			mods: { view: 'secondary' },
-			content: 'dd'
-		},
 		// контент
 		{
-			block: 'header',
+			block: 'nim-header',
 			content: [
-				'bsbbsbsbs',
 				{
 					elem: 'logo',
+					content: ''
 				},
 				{
-					elem: 'menu-button'
+					elem: 'menu-button',
 				}
 			]
 		},
 		{
-			block: 'heading',
+			block: 'nim-heading',
 			content: [
-				'bsbbbsss',
 				{
 					elem: 'cover',
-					content: [
-
-					]
+					content: 'fkga'
 				}
 			]
 		},
 		{
-			block: 'intro',
-			content: [
-
-			]
+			block: 'nim-intro',
+			content: 'fkga'
+		},
+		{
+			block: 'nim-teachers',
+			content: 'fkga'
 		}	
 	// контент
 	]
