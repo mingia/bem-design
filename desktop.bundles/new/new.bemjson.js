@@ -1,6 +1,10 @@
 module.exports = {
 	block: 'page',
+<<<<<<< HEAD
 	title: 'BEM Design',
+=======
+	title: 'BEM New',
+>>>>>>> start
 	favicon: '/favicon.ico',
 	lang: 'ru',
 	head: [
@@ -17,17 +21,14 @@ module.exports = {
 	},
 	content: [
 		{
-			block: 'tpl-layout',
+			block: 'hello',
 			content: [
-
-				/* Start */
 				{
-					elem: 'section',
-					attrs: {
-						style: 'padding: 216px 0px;'
-					},
+					elem: 'name',
+					elemMods: { view: 'inverse' },
 					content: [
 						{
+<<<<<<< HEAD
 							elem: 'container',
 							elemMods: { size: 'm', align: 'center' },
 							content: [
@@ -1425,11 +1426,14 @@ module.exports = {
 									]
 								}
 							]
+=======
+							block: 'text',
+							mods: { view: 'inverse' },
+							content: 'Inverse'
+>>>>>>> start
 						}
 					]
 				}
-				/* /Footer */
-
 			]
 		}
 	]

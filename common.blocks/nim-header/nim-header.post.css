@@ -1,0 +1,22 @@
+.nim-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+
+    &__logo {
+        align-content: center;
+        justify-content: left; 
+        padding-left: 20px;
+        background-repeat: no-repeat;
+        background-image: '';
+    }
+
+    &__menu-button {
+        align-content: center;
+        justify-content: right;
+        padding-right: 15px;
+    }
+}

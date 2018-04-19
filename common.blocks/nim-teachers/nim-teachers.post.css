@@ -1,0 +1,54 @@
+.nim-teachers {
+	width: 100%;
+	height: 100%;
+    padding: 30px 20px 80px 20px;
+    box-sizing: border-box;
+    background-color: #d6cee5;
+
+    &__section-title {
+
+    }
+
+    &__portraits {
+    	margin: auto;
+    	width: 870px;
+    }
+
+    &__line {
+    	width: 870px;
+    	display: flex;
+    	justify-content: space-between;
+    }
+
+    &__button {
+    	margin-top: 200px;
+    	width: 260px;
+    	height: 50px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	background-color: #9b8fb2;
+    	border-radius: 50px;
+    }
+
+    &__item {
+    	width: 200px;
+    	margin-top: 70px;
+    }
+
+    &__photo {
+		width: 200px;
+		height: 200px;
+		border-radius: 100px;
+		background-color: gray;
+	}
+
+	&__name {
+		margin-top: 30px;
+	}
+
+	&__about {
+		margin-top: 5px;
+	}
+
+}

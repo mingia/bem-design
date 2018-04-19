@@ -1,0 +1,21 @@
+.nim-heading {
+    width: 100%;
+    height: 550px;
+    background-color: #d6cee5;
+
+    &__cover {
+        width: 100%;
+        height: 100%;
+        background: url(slon.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+    }
+
+    /*&__background-deco {
+        margin: auto;
+        width: 700px;
+        height: 40px;
+        background-color: white;
+    }*/
+}
