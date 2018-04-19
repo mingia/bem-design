@@ -356,7 +356,6 @@ module.exports = {
 				},
 				{
 					elem: 'row',
-					// elemMods: { border: 'bottom' },
 					content: [
 						{
 							elem: 'day',
@@ -392,8 +391,16 @@ module.exports = {
 					content: [
 						{
 							elem: '1-coloumn',
-							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: '13:00–14:45'
+							content: [
+								{
+									elem: 'icon-time'
+								},
+								{
+									elem: 'time',
+									mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+									content: '13:00–14:45'
+								}
+							]
 						},
 						{
 							elem: '2-coloumn',
@@ -417,8 +424,16 @@ module.exports = {
 					content: [
 						{
 							elem: '1-coloumn',
-							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: '16:30–18:15'
+							content: [
+								{
+									elem: 'icon-time'
+								},
+								{
+									elem: 'time',
+									mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+									content: '16:30–18:15'
+								}
+							]
 						},
 						{
 							elem: '2-coloumn',
@@ -442,8 +457,16 @@ module.exports = {
 					content: [
 						{
 							elem: '1-coloumn',
-							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: '19:45–21:30'
+							content: [
+								{
+									elem: 'icon-time'
+								},
+								{
+									elem: 'time',
+									mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+									content: '19:45–21:30'
+								}
+							]
 						},
 						{
 							elem: '2-coloumn',
