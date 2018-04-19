@@ -1,0 +1,28 @@
+.nim-intro {
+	margin: auto;
+	width: 700px;
+	height: 100%;
+    padding: 40px 20px 50px 20px;
+    box-sizing: border-box;
+    background-color: white;
+
+    &__title {
+
+    }
+
+    &__subtitle {
+    	margin-top: 10px;
+    }
+
+    &__text {
+
+    }
+
+    &__divider {
+    	width: 660px;
+    	margin-bottom: 30px;
+    	margin-top: 40px;
+    	border: 1px solid black;
+    }
+ }
+
