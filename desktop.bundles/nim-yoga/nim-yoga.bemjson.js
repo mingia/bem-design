@@ -365,11 +365,12 @@ module.exports = {
 					]
 				},
 				{
-					elem: 'row',
+					elem: 'shedule',	
 					mix: { block: 'text', mods: {size: 'xs', weight: 'bold', transform: 'uppercase', spacing: 's'} },
 					content: [
 						{
 							elem: '1-coloumn',
+							elemMods: { background: 'light' },
 							content: 'Время'
 						},
 						{
@@ -378,6 +379,7 @@ module.exports = {
 						},
 						{
 							elem: '3-coloumn',
+							elemMods: { background: 'light' },
 							content: 'Направление'
 						},
 						{
@@ -387,7 +389,7 @@ module.exports = {
 					]
 				},
 				{
-					elem: 'row',
+					elem: 'shedule',
 					content: [
 						{
 							elem: '1-coloumn',
@@ -404,6 +406,7 @@ module.exports = {
 						},
 						{
 							elem: '2-coloumn',
+							elemMods: { background: 'light' },
 							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
 							content: 'Сергей Шаталов'
 						},
@@ -414,16 +417,18 @@ module.exports = {
 						},
 						{
 							elem: '4-coloumn',
+							elemMods: { background: 'light' },
 							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
 							content: 'Средний'
 						}
 					]
 				},
 				{
-					elem: 'row',
+					elem: 'shedule',
 					content: [
 						{
 							elem: '1-coloumn',
+							elemMods: { background: 'light' },
 							content: [
 								{
 									elem: 'icon-time'
@@ -442,6 +447,7 @@ module.exports = {
 						},
 						{
 							elem: '3-coloumn',
+							elemMods: { background: 'light' },
 							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
 							content: 'Дживамукти'
 						},
@@ -453,7 +459,7 @@ module.exports = {
 					]
 				},
 				{
-					elem: 'row',
+					elem: 'shedule',
 					content: [
 						{
 							elem: '1-coloumn',
@@ -470,6 +476,7 @@ module.exports = {
 						},
 						{
 							elem: '2-coloumn',
+							elemMods: { background: 'light' },
 							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
 							content: 'Алена Тихонова'
 						},
@@ -480,6 +487,7 @@ module.exports = {
 						},
 						{
 							elem: '4-coloumn',
+							elemMods: { background: 'light' },
 							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
 							content: 'Легкий'
 						}
