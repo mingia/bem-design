@@ -355,141 +355,554 @@ module.exports = {
 					content: 'Расписание'
 				},
 				{
+					elem: 'gap',
+					elemMods: {height: '10'},
+				},
+				{
 					elem: 'row',
+					mix: { block: 'nim-schedule-hovers', elem: 'row' },
 					content: [
 						{
 							elem: 'day',
 							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 'm'} },
 							content: 'Понедельник'
-						}
-					]
-				},
-				{
-					elem: 'shedule',	
-					mix: { block: 'text', mods: {size: 'xs', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-					content: [
-						{
-							elem: '1-coloumn',
-							elemMods: { background: 'light' },
-							content: 'Время'
 						},
 						{
-							elem: '2-coloumn',
-							content: 'Преподаватель'
-						},
-						{
-							elem: '3-coloumn',
-							elemMods: { background: 'light' },
-							content: 'Направление'
-						},
-						{
-							elem: '4-coloumn',
-							content: 'Уровень'
-						}
-					]
-				},
-				{
-					elem: 'shedule',
-					content: [
-						{
-							elem: '1-coloumn',
+							elem: 'arrow',
 							content: [
 								{
-									elem: 'icon-time'
+									elem: 'circle',
 								},
 								{
-									elem: 'time',
-									mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-									content: '13:00–14:45'
+									elem: 'line-topleft',
+								},
+								{
+									elem: 'line-topright',
 								}
 							]
 						},
 						{
-							elem: '2-coloumn',
-							elemMods: { background: 'light' },
-							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: 'Сергей Шаталов'
-						},
-						{
-							elem: '3-coloumn',
-							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: 'Дживамукти'
-						},
-						{
-							elem: '4-coloumn',
-							elemMods: { background: 'light' },
-							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: 'Средний'
+							elem: 'arrow-hover',
+							mix: { block: 'nim-schedule-hovers', elem: 'arrow-hover' },
+							content: [
+								{
+									elem: 'circle',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-topleft',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-topright',
+									elemMods: {color: 'inverse'}
+								}
+							]
 						}
 					]
 				},
 				{
-					elem: 'shedule',
+					elem: 'schedule',
 					content: [
 						{
-							elem: '1-coloumn',
-							elemMods: { background: 'light' },
+							elem: 'zebra',
+							elemMods: {align: 'left'},
 							content: [
 								{
-									elem: 'icon-time'
+									elem: 'zebra-item',
+									elemMods: {background: 'light'},
 								},
 								{
-									elem: 'time',
-									mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-									content: '16:30–18:15'
+									elem: 'zebra-item',
+								},
+								{
+									elem: 'zebra-item',
+									elemMods: {background: 'light'},
+								},
+								{
+									elem: 'zebra-item',
+								}
+								
+							]
+						},
+						{
+							elem: 'schedule-table',
+							content: [
+								{
+									elem: 'schedule-row',	
+									mix: { block: 'text', mods: {size: 'xs', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+									content: [
+										{
+											elem: 'schedule-cell',
+											elemMods: {state: 'head', width: '30', background: 'light'},
+											content: 'Время'
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {state: 'head', width: '30', background: 'dark'},
+											content: 'Преподаватель'
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {state: 'head', width: '30', background: 'light'},
+											content: 'Направление'
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {state: 'head', width: '10', background: 'dark'},
+											content: 'Уровень'
+										}
+									]
+								},
+								{
+									elem: 'schedule-row',
+									content: [
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '30', align: 'center'},
+											content: [
+												{
+													elem: 'icon-time',
+													content: [
+														{
+															elem: 'time-circle'
+														},
+														{
+															elem: 'segment-right'
+														},
+														{
+															elem: 'mask-right'
+														}
+													]
+												},
+												{
+													elem: 'time',
+													mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: '13:00–14:45'
+												}
+											]
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '30', align: 'center', background: 'light' },
+											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Сергей Шаталов'
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '30', align: 'center'},
+											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Дживамукти'
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '10', align: 'center', background: 'light' },
+											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Средний'
+										}
+									]
+								},
+								{
+									elem: 'schedule-row',
+									content: [
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '30', align: 'center', background: 'light' },
+											content: [
+												{
+													elem: 'icon-time',
+													content: [
+														{
+															elem: 'time-circle'
+														},
+														{
+															elem: 'segment-bottom'
+														},
+														{
+															elem: 'mask-bottom'
+														}
+													]
+												},
+												{
+													elem: 'time',
+													mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: '16:30–18:15'
+												}
+											]
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '30', align: 'center'},
+											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Илона Белая'
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '30', align: 'center', background: 'light' },
+											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Дживамукти'
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '10', align: 'center'},
+											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Легкий'
+										}
+									]
+								},
+								{
+									elem: 'schedule-row',
+									content: [
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '30', align: 'center'},
+											content: [
+												{
+													elem: 'icon-time',
+													content: [
+														{
+															elem: 'time-circle'
+														},
+														{
+															elem: 'segment-left'
+														},
+														{
+															elem: 'mask-left'
+														}
+													]
+												},
+												{
+													elem: 'time',
+													mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: '19:45–21:30'
+												}
+											]
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '30', align: 'center', background: 'light' },
+											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Алена Тихонова'
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '30', align: 'center'},
+											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Хатха'
+										},
+										{
+											elem: 'schedule-cell',
+											elemMods: {width: '10', align: 'center', background: 'light' },
+											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Легкий'
+										}
+									]
 								}
 							]
 						},
 						{
-							elem: '2-coloumn',
-							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: 'Илона Белая'
-						},
-						{
-							elem: '3-coloumn',
-							elemMods: { background: 'light' },
-							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: 'Дживамукти'
-						},
-						{
-							elem: '4-coloumn',
-							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: 'Легкий'
+							elem: 'zebra',
+							elemMods: {align: 'left'},
+							content: [
+								{
+									elem: 'zebra-item',
+									elemMods: {background: 'dark'}
+								},
+								{
+									elem: 'zebra-item',
+									elemMods: {background: 'light'}
+								},
+								{
+									elem: 'zebra-item',
+								},
+								{
+									elem: 'zebra-item',
+									elemMods: {background: 'light'}
+								}
+								
+							]
 						}
 					]
 				},
 				{
-					elem: 'shedule',
+					elem: 'gap',
+					elemMods: {height: '10'},
+				},
+				{
+					elem: 'row',
+					mix: { block: 'nim-schedule-hovers', elem: 'row' },
 					content: [
 						{
-							elem: '1-coloumn',
+							elem: 'day',
+							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 'm'} },
+							content: 'Вторник'
+						},
+						{
+							elem: 'arrow',
 							content: [
 								{
-									elem: 'icon-time'
+									elem: 'circle',
 								},
 								{
-									elem: 'time',
-									mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-									content: '19:45–21:30'
+									elem: 'line-left',
+								},
+								{
+									elem: 'line-right',
 								}
 							]
 						},
 						{
-							elem: '2-coloumn',
-							elemMods: { background: 'light' },
-							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: 'Алена Тихонова'
+							elem: 'arrow-hover',
+							mix: { block: 'nim-schedule-hovers', elem: 'arrow-hover' },
+							content: [
+								{
+									elem: 'circle',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-left',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-right',
+									elemMods: {color: 'inverse'}
+								}
+							]
+						}
+					]
+				},
+				{
+					elem: 'gap',
+					elemMods: {height: '10'},
+				},
+				{
+					elem: 'row',
+					mix: { block: 'nim-schedule-hovers', elem: 'row' },
+					content: [
+						{
+							elem: 'day',
+							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 'm'} },
+							content: 'Среда'
 						},
 						{
-							elem: '3-coloumn',
-							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: 'Хатха'
+							elem: 'arrow',
+							content: [
+								{
+									elem: 'circle',
+								},
+								{
+									elem: 'line-left',
+								},
+								{
+									elem: 'line-right',
+								}
+							]
 						},
 						{
-							elem: '4-coloumn',
-							elemMods: { background: 'light' },
-							mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-							content: 'Легкий'
+							elem: 'arrow-hover',
+							mix: { block: 'nim-schedule-hovers', elem: 'arrow-hover' },
+							content: [
+								{
+									elem: 'circle',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-left',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-right',
+									elemMods: {color: 'inverse'}
+								}
+							]
+						}
+					]
+				},
+				{
+					elem: 'gap',
+					elemMods: {height: '10'},
+				},
+				{
+					elem: 'row',
+					mix: { block: 'nim-schedule-hovers', elem: 'row' },
+					content: [
+						{
+							elem: 'day',
+							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 'm'} },
+							content: 'Четверг'
+						},
+						{
+							elem: 'arrow',
+							content: [
+								{
+									elem: 'circle',
+								},
+								{
+									elem: 'line-left',
+								},
+								{
+									elem: 'line-right',
+								}
+							]
+						},
+						{
+							elem: 'arrow-hover',
+							mix: { block: 'nim-schedule-hovers', elem: 'arrow-hover' },
+							content: [
+								{
+									elem: 'circle',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-left',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-right',
+									elemMods: {color: 'inverse'}
+								}
+							]
+						}
+					]
+				},
+				{
+					elem: 'gap',
+					elemMods: {height: '10'},
+				},
+				{
+					elem: 'row',
+					mix: { block: 'nim-schedule-hovers', elem: 'row' },
+					content: [
+						{
+							elem: 'day',
+							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 'm'} },
+							content: 'Пятница'
+						},
+						{
+							elem: 'arrow',
+							content: [
+								{
+									elem: 'circle',
+								},
+								{
+									elem: 'line-left',
+								},
+								{
+									elem: 'line-right',
+								}
+							]
+						},
+						{
+							elem: 'arrow-hover',
+							mix: { block: 'nim-schedule-hovers', elem: 'arrow-hover' },
+							content: [
+								{
+									elem: 'circle',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-left',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-right',
+									elemMods: {color: 'inverse'}
+								}
+							]
+						}
+					]
+				},
+				{
+					elem: 'gap',
+					elemMods: {height: '10'},
+				},
+				{
+					elem: 'row',
+					mix: { block: 'nim-schedule-hovers', elem: 'row' },
+					content: [
+						{
+							elem: 'day',
+							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 'm'} },
+							content: 'Суббота'
+						},
+						{
+							elem: 'arrow',
+							content: [
+								{
+									elem: 'circle',
+								},
+								{
+									elem: 'line-left',
+								},
+								{
+									elem: 'line-right',
+								}
+							]
+						},
+						{
+							elem: 'arrow-hover',
+							mix: { block: 'nim-schedule-hovers', elem: 'arrow-hover' },
+							content: [
+								{
+									elem: 'circle',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-left',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-right',
+									elemMods: {color: 'inverse'}
+								}
+							]
+						}
+					]
+				},
+				{
+					elem: 'gap',
+					elemMods: {height: '10'},
+				},
+				{
+					elem: 'row',
+					mix: { block: 'nim-schedule-hovers', elem: 'row' },
+					content: [
+						{
+							elem: 'day',
+							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 'm'} },
+							content: 'Воскресенье'
+						},
+						{
+							elem: 'arrow',
+							content: [
+								{
+									elem: 'circle',
+								},
+								{
+									elem: 'line-left',
+								},
+								{
+									elem: 'line-right',
+								}
+							]
+						},
+						{
+							elem: 'arrow-hover',
+							mix: { block: 'nim-schedule-hovers', elem: 'arrow-hover' },
+							content: [
+								{
+									elem: 'circle',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-left',
+									elemMods: {color: 'inverse'}
+								},
+								{
+									elem: 'line-right',
+									elemMods: {color: 'inverse'}
+								}
+							]
 						}
 					]
 				}

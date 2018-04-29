@@ -1,0 +1,14 @@
+.nim-schedule-hovers {
+
+	&__arrow-hover {
+		visibility: hidden;
+	}
+
+	&__row {
+		&:hover {
+			.nim-schedule-hovers__arrow-hover {
+				visibility: visible;
+			}
+		}
+	}
+}
