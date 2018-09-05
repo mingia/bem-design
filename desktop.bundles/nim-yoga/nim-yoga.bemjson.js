@@ -94,7 +94,7 @@ module.exports = {
 												{
 									 				block: 'image',
 									 				width: 200,
-									 				url: '../../../../assets/image/teachers/ania_lunegova.png',
+									 				url: '../../../../assets/image/nym/teachers/ania_lunegova.png',
 									 			}
 											]
 										},
@@ -119,7 +119,7 @@ module.exports = {
 												{
 									 				block: 'image',
 									 				width: 200,
-									 				url: '../../../../assets/image/teachers/ania_schetinina.png',
+									 				url: '../../../../assets/image/nym/teachers/ania_schetinina.png',
 									 			}
 											]
 										},
@@ -144,7 +144,7 @@ module.exports = {
 												{
 									 				block: 'image',
 									 				width: 200,
-									 				url: '../../../../assets/image/teachers/k_kushner.png',
+									 				url: '../../../../assets/image/nym/teachers/k_kushner.png',
 									 			}
 											]
 										},
@@ -175,7 +175,7 @@ module.exports = {
 												{
 									 				block: 'image',
 									 				width: 200,
-									 				url: '../../../../assets/image/teachers/ulia_shelkovina.png',
+									 				url: '../../../../assets/image/nym/teachers/ulia_shelkovina.png',
 									 			}
 											]
 										},
@@ -208,7 +208,7 @@ module.exports = {
 												{
 									 				block: 'image',
 									 				width: 200,
-									 				url: '../../../../assets/image/teachers/elena_kan.png',
+									 				url: '../../../../assets/image/nym/teachers/elena_kan.png',
 									 			}
 											]
 										},
@@ -335,7 +335,14 @@ module.exports = {
 									elem: '4x-section',
 									content: [
 										{
-											elem: 'photo'
+											elem: 'photo',
+											content: [
+												{
+									 				block: 'image',
+									 				width: 310,
+									 				url: '../../../../assets/image/nym/gallery/1.png',
+									 			}
+											]
 										}
 									]
 								},
@@ -349,7 +356,14 @@ module.exports = {
 													elem: '1x-section',
 													content: [
 														{
-															elem: 'photo'
+															elem: 'photo',
+															content: [
+																{
+													 				block: 'image',
+													 				width: 146,
+													 				url: '../../../../assets/image/nym/gallery/2.png',
+													 			}
+															]
 														}
 													]
 												},
@@ -357,7 +371,14 @@ module.exports = {
 													elem: '1x-section',
 													content: [
 														{
-															elem: 'photo'
+															elem: 'photo',
+															content: [
+																{
+													 				block: 'image',
+													 				width: 146,
+													 				url: '../../../../assets/image/nym/gallery/3.png',
+													 			}
+															]
 														}
 													]
 												}
@@ -367,7 +388,14 @@ module.exports = {
 											elem: '2x-section',
 											content: [
 												{
-													elem: 'photo'
+													elem: 'photo',
+													content: [
+														{
+											 				block: 'image',
+											 				width: 310,
+											 				url: '../../../../assets/image/nym/gallery/4.png',
+											 			}
+													]
 												}
 											]
 										}
@@ -377,7 +405,14 @@ module.exports = {
 									elem: '4x-section',
 									content: [
 										{
-											elem: 'photo'
+											elem: 'photo',
+											content: [
+												{
+									 				block: 'image',
+									 				width: 310,
+									 				url: '../../../../assets/image/nym/gallery/5.png',
+									 			}
+											]
 										}
 									]
 								}

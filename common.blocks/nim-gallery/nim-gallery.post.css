@@ -45,6 +45,7 @@
     &__photos {
         margin: auto;
         width: 970px; 
+        height: 310px;
         display: flex;
         align-content: space-between;
         justify-content: space-between;
@@ -55,28 +56,24 @@
     &__4x-section {
         width: 310px;
         height: 310px;
-        /*display: flex;
-        align-content: space-between;
-        justify-content: space-between;*/
     }
 
     &__2x-section {
         width: 310px;
-        height: 140px;
+        height: 155px;
         display: flex;
-        /*align-content: space-between;*/
         justify-content: space-between;
     }
 
     &__1x-section {
-        width: 140px;
-        height: 140px;    
+        width: 146px;
+        height: 146px;  
     }
 
     &__photo {
         width: 100%;
         height: 100%;
-        background-color: gray;
+        background-color: white;
     }
 
 }
