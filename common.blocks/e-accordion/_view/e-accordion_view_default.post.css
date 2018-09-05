@@ -1,0 +1,5 @@
+.e-accordion_view_default {
+	& .e-accordion__more {
+		background: transparent;
+	}
+}

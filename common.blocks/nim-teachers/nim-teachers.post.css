@@ -40,8 +40,9 @@
 		width: 200px;
 		height: 200px;
 		border-radius: 100px;
-		background-color: gray;
-	}
+        box-shadow: 0 0 0 1px #d6cee5 inset;
+        background-color: gray;
+    }
 
 	&__name {
 		margin-top: 30px;
