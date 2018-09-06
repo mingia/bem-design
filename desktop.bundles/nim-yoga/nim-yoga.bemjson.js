@@ -321,10 +321,26 @@ module.exports = {
 							elem: 'arrows',
 							content: [
 								{
-									elem: 'arrow-button'
+									elem: 'arrow-button',
+									content: [
+										{
+											elem: 'line-topleft',
+										},
+										{
+											elem: 'line-left',
+										}
+									]
 								},
 								{
-									elem: 'arrow-button'
+									elem: 'arrow-button',
+									content: [
+										{
+											elem: 'line-topright',
+										},
+										{
+											elem: 'line-right',
+										}
+									]
 								}
 							]
 						},
