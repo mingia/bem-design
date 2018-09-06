@@ -192,12 +192,29 @@ module.exports = {
 									]
 								},
 								{
-									elem: 'button',
-									mix: [
-										{ block: 'e-accordion', elem: 'arrow' },
-										{ block: 'text', mods: {size: 'm', weight: 'bold', view: 'inverse', transform: 'uppercase', spacing: 's'} }
-									],
-									content: 'Все преподаватели'
+									elem: 'item',
+									content: [
+										{
+											elem: 'photo',
+											content: [
+												{
+									 				block: 'image',
+									 				width: 200,
+									 				url: '../../../../assets/image/nym/teachers/alena_tihonova.png',
+									 			}
+											]
+										},
+										{
+											elem: 'name',
+											mix: { block: 'text', mods: {align: 'center', size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Алёна Тихонова'
+										},
+										{
+											elem: 'about',
+											mix: { block: 'text', mods: {align: 'center', size: 'xs', transform: 'uppercase', spacing: 's'} },
+											content: 'Старший преподаватель'
+										}
+									]
 								},
 								{
 									elem: 'item',
@@ -228,13 +245,19 @@ module.exports = {
 						},
 						{
 							elem: 'line',
-							mix: {block: 'e-accordion', elem: 'more'},
 							content: [
 								{
 									elem: 'item',
 									content: [
 										{
 											elem: 'photo',
+											content: [
+												{
+									 				block: 'image',
+									 				width: 200,
+									 				url: '../../../../assets/image/nym/teachers/ilona_belaya.png',
+									 			}
+											]
 										},
 										{
 											elem: 'name',
@@ -253,11 +276,18 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
+											content: [
+												{
+									 				block: 'image',
+									 				width: 200,
+									 				url: '../../../../assets/image/nym/teachers/irina_burmistrova.png',
+									 			}
+											]
 										},
 										{
 											elem: 'name',
 											mix: { block: 'text', mods: {align: 'center', size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Алёна Тихонова'
+											content: 'Ирина Бурмистрова'
 										},
 										{
 											elem: 'about',
@@ -271,6 +301,13 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
+											content: [
+												{
+									 				block: 'image',
+									 				width: 200,
+									 				url: '../../../../assets/image/nym/teachers/sergei_shatalov.png',
+									 			}
+											]
 										},
 										{
 											elem: 'name',
@@ -284,6 +321,20 @@ module.exports = {
 										}
 									]
 								}
+							]
+						},
+						{
+							elem: 'line',
+							elemMods: {align: 'center'},
+							content: [
+								{
+									elem: 'button',
+									mix: [
+										{ block: 'e-accordion', elem: 'arrow' },
+										{ block: 'text', mods: {size: 'm', weight: 'bold', view: 'inverse', transform: 'uppercase', spacing: 's'} }
+									],
+									content: 'Все преподаватели'
+								}	
 							]
 						}
 					]

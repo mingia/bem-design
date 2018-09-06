@@ -18,17 +18,10 @@
     	width: 870px;
     	display: flex;
     	justify-content: space-between;
-    }
 
-    &__button {
-    	margin-top: 200px;
-    	width: 260px;
-    	height: 50px;
-    	display: flex;
-    	align-items: center;
-    	justify-content: center;
-    	background-color: #9b8fb2;
-    	border-radius: 50px;
+        &_align_center {
+            justify-content: center;    
+        }
     }
 
     &__item {
@@ -51,5 +44,18 @@
 	&__about {
 		margin-top: 5px;
 	}
+
+    /* кнопка */
+
+    &__button {
+        margin-top: 100px;
+        width: 260px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #9b8fb2;
+        border-radius: 50px;
+    }
 
 }
