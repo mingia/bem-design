@@ -30,11 +30,60 @@
     }
 
     &__photo {
+        position: relative;
+        z-index: 1;
 		width: 200px;
 		height: 200px;
 		border-radius: 100px;
         box-shadow: 0 0 0 1px #d6cee5 inset;
-        background-color: gray;
+        /*background-color: gray;*/
+        transition: .2s;
+        transition-timing-function: ease-in-out;
+
+        &_portrait_1 {
+            background-image: url("1_ania_lunegova.png");    
+        }
+
+        &_portrait_2 {
+            background-image: url("2_ania_schetinina.png");    
+        }
+
+        &_portrait_3 {
+            background-image: url("3_k_kushner.png");    
+        }
+
+        &_portrait_4 {
+            background-image: url("4_ulia_shelkovina.png");    
+        }
+
+        &_portrait_5 {
+            background-image: url("5_alena_tihonova.png");    
+        }
+
+        &_portrait_6 {
+            background-image: url("6_elena_kan.png");    
+        }
+
+        &_portrait_7 {
+            background-image: url("7_ilona_belaya.png");    
+        }
+
+        &_portrait_8 {
+            background-image: url("8_irina_burmistrova.png");    
+        }
+
+        &_portrait_9 {
+            background-image: url("9_sergei_shatalov.png");    
+        }
+
+        &:hover {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            box-shadow: 0 0 0 15px white inset;
+            background-image: url("i_about-sign.png");
+        }
+
     }
 
 	&__name {
@@ -56,6 +105,13 @@
         justify-content: center;
         background-color: #9b8fb2;
         border-radius: 50px;
+        transition: background-color .2s;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            background-color: #7b6b99;
+        }
+
     }
 
 }

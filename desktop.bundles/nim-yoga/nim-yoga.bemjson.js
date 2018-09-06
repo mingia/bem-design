@@ -90,13 +90,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
-											content: [
-												{
-									 				block: 'image',
-									 				width: 200,
-									 				url: '../../../../assets/image/nym/teachers/ania_lunegova.png',
-									 			}
-											]
+											elemMods: { portrait: '1' }
 										},
 										{
 											elem: 'name',
@@ -115,13 +109,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
-											content: [
-												{
-									 				block: 'image',
-									 				width: 200,
-									 				url: '../../../../assets/image/nym/teachers/ania_schetinina.png',
-									 			}
-											]
+											elemMods: { portrait: '2' }
 										},
 										{
 											elem: 'name',
@@ -140,13 +128,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
-											content: [
-												{
-									 				block: 'image',
-									 				width: 200,
-									 				url: '../../../../assets/image/nym/teachers/k_kushner.png',
-									 			}
-											]
+											elemMods: { portrait: '3' }
 										},
 										{
 											elem: 'name',
@@ -171,13 +153,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
-											content: [
-												{
-									 				block: 'image',
-									 				width: 200,
-									 				url: '../../../../assets/image/nym/teachers/ulia_shelkovina.png',
-									 			}
-											]
+											elemMods: { portrait: '4' }
 										},
 										{
 											elem: 'name',
@@ -196,13 +172,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
-											content: [
-												{
-									 				block: 'image',
-									 				width: 200,
-									 				url: '../../../../assets/image/nym/teachers/alena_tihonova.png',
-									 			}
-											]
+											elemMods: { portrait: '5' }
 										},
 										{
 											elem: 'name',
@@ -221,13 +191,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
-											content: [
-												{
-									 				block: 'image',
-									 				width: 200,
-									 				url: '../../../../assets/image/nym/teachers/elena_kan.png',
-									 			}
-											]
+											elemMods: { portrait: '6' }
 										},
 										{
 											elem: 'name',
@@ -251,13 +215,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
-											content: [
-												{
-									 				block: 'image',
-									 				width: 200,
-									 				url: '../../../../assets/image/nym/teachers/ilona_belaya.png',
-									 			}
-											]
+											elemMods: { portrait: '7' }
 										},
 										{
 											elem: 'name',
@@ -276,13 +234,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
-											content: [
-												{
-									 				block: 'image',
-									 				width: 200,
-									 				url: '../../../../assets/image/nym/teachers/irina_burmistrova.png',
-									 			}
-											]
+											elemMods: { portrait: '8' }
 										},
 										{
 											elem: 'name',
@@ -301,13 +253,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
-											content: [
-												{
-									 				block: 'image',
-									 				width: 200,
-									 				url: '../../../../assets/image/nym/teachers/sergei_shatalov.png',
-									 			}
-											]
+											elemMods: { portrait: '9' }
 										},
 										{
 											elem: 'name',
