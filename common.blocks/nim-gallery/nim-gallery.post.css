@@ -24,6 +24,44 @@
         height: 100%;
     }
 
+    /* картинки */
+
+    &__photos {
+        margin: auto;
+        width: 970px; 
+        height: 310px;
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__4x-section {
+        width: 310px;
+        height: 310px;
+    }
+
+    &__2x-section {
+        width: 310px;
+        height: 155px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__1x-section {
+        width: 146px;
+        height: 146px;  
+    }
+
+    &__photo {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+
+    /* кнопки-стрелки */
+
     &__arrows {
         width: 100%;
         display: flex;
@@ -40,43 +78,58 @@
         height: 75px;
         border-radius: 40px;
         background-color: #d6cee5;
+        transition: background-color .2s;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            background-color: #e2dded;
+        }
     }
 
-    &__photos {
-        margin: auto;
-        width: 970px; 
-        display: flex;
-        align-content: space-between;
-        justify-content: space-between;
-        position: relative;
-        z-index: 1;
+    /* стрелки-линии */
+
+    &__line-left {
+        position: absolute;
+        left: 30px;
+        top: 32px;
+        z-index: 3;
+        width: 5px;
+        height: 25px;
+        background-color: #333;
+        transform: rotate(-45deg);
     }
 
-    &__4x-section {
-        width: 310px;
-        height: 310px;
-        /*display: flex;
-        align-content: space-between;
-        justify-content: space-between;*/
+    &__line-topleft {
+        position: absolute;
+        left: 30px;
+        top: 17px;
+        z-index: 3;
+        width: 5px;
+        height: 25px;
+        background-color: #333;
+        transform: rotate(45deg);
     }
 
-    &__2x-section {
-        width: 310px;
-        height: 140px;
-        display: flex;
-        /*align-content: space-between;*/
-        justify-content: space-between;
+    &__line-right {
+        position: absolute;
+        right: 30px;
+        top: 32px;
+        z-index: 4;
+        width: 5px;
+        height: 25px;
+        background-color: #333;
+        transform: rotate(45deg);
     }
 
-    &__1x-section {
-        width: 140px;
-        height: 140px;    
-    }
-
-    &__photo {
-        width: 100%;
-        height: 100%;
-        background-color: gray;
+    &__line-topright {
+        position: absolute;
+        right: 30px;
+        top: 17px;
+        z-index: 4;
+        width: 5px;
+        height: 25px;
+        background-color: #333;
+        transform: rotate(-45deg);
     }
 
 }

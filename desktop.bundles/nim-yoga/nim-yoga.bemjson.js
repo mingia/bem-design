@@ -72,6 +72,7 @@ module.exports = {
 		},
 		{
 			block: 'nim-teachers',
+			mix: {block: 'e-accordion', mods: {view: 'default'}},
 			content: [
 				{
 					elem: 'section-title',
@@ -89,6 +90,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
+											elemMods: { portrait: '1' }
 										},
 										{
 											elem: 'name',
@@ -107,6 +109,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
+											elemMods: { portrait: '2' }
 										},
 										{
 											elem: 'name',
@@ -125,6 +128,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
+											elemMods: { portrait: '3' }
 										},
 										{
 											elem: 'name',
@@ -142,12 +146,14 @@ module.exports = {
 						},
 						{
 							elem: 'line',
+							mix: {block: 'e-accordion', elem: 'show'},
 							content: [
 								{
 									elem: 'item',
 									content: [
 										{
 											elem: 'photo',
+											elemMods: { portrait: '4' }
 										},
 										{
 											elem: 'name',
@@ -166,6 +172,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
+											elemMods: { portrait: '5' }
 										},
 										{
 											elem: 'name',
@@ -184,6 +191,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
+											elemMods: { portrait: '6' }
 										},
 										{
 											elem: 'name',
@@ -207,6 +215,7 @@ module.exports = {
 									content: [
 										{
 											elem: 'photo',
+											elemMods: { portrait: '7' }
 										},
 										{
 											elem: 'name',
@@ -221,15 +230,30 @@ module.exports = {
 									]
 								},
 								{
-									elem: 'button',
-									mix: { block: 'text', mods: {size: 'm', weight: 'bold', view: 'inverse', transform: 'uppercase', spacing: 's'} },
-									content: 'Все преподаватели'
+									elem: 'item',
+									content: [
+										{
+											elem: 'photo',
+											elemMods: { portrait: '8' }
+										},
+										{
+											elem: 'name',
+											mix: { block: 'text', mods: {align: 'center', size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+											content: 'Ирина Бурмистрова'
+										},
+										{
+											elem: 'about',
+											mix: { block: 'text', mods: {align: 'center', size: 'xs', transform: 'uppercase', spacing: 's'} },
+											content: 'Старший преподаватель'
+										}
+									]
 								},
 								{
 									elem: 'item',
 									content: [
 										{
 											elem: 'photo',
+											elemMods: { portrait: '9' }
 										},
 										{
 											elem: 'name',
@@ -243,6 +267,20 @@ module.exports = {
 										}
 									]
 								}
+							]
+						},
+						{
+							elem: 'line',
+							elemMods: {align: 'center'},
+							content: [
+								{
+									elem: 'button',
+									mix: [
+										{ block: 'e-accordion', elem: 'arrow' },
+										{ block: 'text', mods: {size: 'm', weight: 'bold', view: 'inverse', transform: 'uppercase', spacing: 's'} }
+									],
+									content: 'Все преподаватели'
+								}	
 							]
 						}
 					]
@@ -280,10 +318,26 @@ module.exports = {
 							elem: 'arrows',
 							content: [
 								{
-									elem: 'arrow-button'
+									elem: 'arrow-button',
+									content: [
+										{
+											elem: 'line-topleft',
+										},
+										{
+											elem: 'line-left',
+										}
+									]
 								},
 								{
-									elem: 'arrow-button'
+									elem: 'arrow-button',
+									content: [
+										{
+											elem: 'line-topright',
+										},
+										{
+											elem: 'line-right',
+										}
+									]
 								}
 							]
 						},
@@ -294,7 +348,14 @@ module.exports = {
 									elem: '4x-section',
 									content: [
 										{
-											elem: 'photo'
+											elem: 'photo',
+											content: [
+												{
+									 				block: 'image',
+									 				width: 310,
+									 				url: '../../../../assets/image/nym/gallery/1.png',
+									 			}
+											]
 										}
 									]
 								},
@@ -308,7 +369,14 @@ module.exports = {
 													elem: '1x-section',
 													content: [
 														{
-															elem: 'photo'
+															elem: 'photo',
+															content: [
+																{
+													 				block: 'image',
+													 				width: 146,
+													 				url: '../../../../assets/image/nym/gallery/2.png',
+													 			}
+															]
 														}
 													]
 												},
@@ -316,7 +384,14 @@ module.exports = {
 													elem: '1x-section',
 													content: [
 														{
-															elem: 'photo'
+															elem: 'photo',
+															content: [
+																{
+													 				block: 'image',
+													 				width: 146,
+													 				url: '../../../../assets/image/nym/gallery/3.png',
+													 			}
+															]
 														}
 													]
 												}
@@ -326,7 +401,14 @@ module.exports = {
 											elem: '2x-section',
 											content: [
 												{
-													elem: 'photo'
+													elem: 'photo',
+													content: [
+														{
+											 				block: 'image',
+											 				width: 310,
+											 				url: '../../../../assets/image/nym/gallery/4.png',
+											 			}
+													]
 												}
 											]
 										}
@@ -336,7 +418,14 @@ module.exports = {
 									elem: '4x-section',
 									content: [
 										{
-											elem: 'photo'
+											elem: 'photo',
+											content: [
+												{
+									 				block: 'image',
+									 				width: 310,
+									 				url: '../../../../assets/image/nym/gallery/5.png',
+									 			}
+											]
 										}
 									]
 								}
@@ -359,267 +448,278 @@ module.exports = {
 					elemMods: {height: '10'},
 				},
 				{
-					elem: 'row',
-					mix: { block: 'nim-schedule-hovers', elem: 'row' },
+					elem: 'item',
+					mix: {block: 'e-accordion', mods: {view: 'default'}},
 					content: [
 						{
-							elem: 'day',
-							mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 'm'} },
-							content: 'Понедельник'
-						},
-						{
-							elem: 'arrow',
+							elem: 'row',
+							mix: [
+								{block: 'nim-schedule-hovers', elem: 'row'},
+								{block: 'e-accordion'/*, elem: 'short'*/}
+							],
 							content: [
 								{
-									elem: 'circle',
+									elem: 'day',
+									mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 'm'} },
+									content: 'Понедельник'
 								},
 								{
-									elem: 'line-topleft',
-								},
-								{
-									elem: 'line-topright',
-								}
-							]
-						},
-						{
-							elem: 'arrow-hover',
-							mix: { block: 'nim-schedule-hovers', elem: 'arrow-hover' },
-							content: [
-								{
-									elem: 'circle',
-									elemMods: {color: 'inverse'}
-								},
-								{
-									elem: 'line-topleft',
-									elemMods: {color: 'inverse'}
-								},
-								{
-									elem: 'line-topright',
-									elemMods: {color: 'inverse'}
-								}
-							]
-						}
-					]
-				},
-				{
-					elem: 'schedule',
-					content: [
-						{
-							elem: 'zebra',
-							elemMods: {align: 'left'},
-							content: [
-								{
-									elem: 'zebra-item',
-									elemMods: {background: 'light'},
-								},
-								{
-									elem: 'zebra-item',
-								},
-								{
-									elem: 'zebra-item',
-									elemMods: {background: 'light'},
-								},
-								{
-									elem: 'zebra-item',
-								}
-								
-							]
-						},
-						{
-							elem: 'schedule-table',
-							content: [
-								{
-									elem: 'schedule-row',	
-									mix: { block: 'text', mods: {size: 'xs', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+									elem: 'arrow',
+									mix: {block: 'e-accordion', elem: 'arrow'},
 									content: [
 										{
-											elem: 'schedule-cell',
-											elemMods: {state: 'head', width: '30', background: 'light'},
-											content: 'Время'
+											elem: 'circle',
 										},
 										{
-											elem: 'schedule-cell',
-											elemMods: {state: 'head', width: '30', background: 'dark'},
-											content: 'Преподаватель'
+											elem: 'line-topleft',
 										},
 										{
-											elem: 'schedule-cell',
-											elemMods: {state: 'head', width: '30', background: 'light'},
-											content: 'Направление'
-										},
-										{
-											elem: 'schedule-cell',
-											elemMods: {state: 'head', width: '10', background: 'dark'},
-											content: 'Уровень'
+											elem: 'line-topright',
 										}
 									]
 								},
 								{
-									elem: 'schedule-row',
+									elem: 'arrow-hover',
+									mix: { block: 'nim-schedule-hovers', elem: 'arrow-hover' },
 									content: [
 										{
-											elem: 'schedule-cell',
-											elemMods: {width: '30', align: 'center'},
+											elem: 'circle',
+											elemMods: {color: 'inverse'}
+										},
+										{
+											elem: 'line-topleft',
+											elemMods: {color: 'inverse'}
+										},
+										{
+											elem: 'line-topright',
+											elemMods: {color: 'inverse'}
+										}
+									]
+								}
+							]
+						},
+						{
+							elem: 'schedule',
+							mix: { block: 'e-accordion', elem: 'more' },
+							content: [
+								{
+									elem: 'zebra',
+									elemMods: {align: 'left'},
+									content: [
+										{
+											elem: 'zebra-item',
+											elemMods: {background: 'light'},
+										},
+										{
+											elem: 'zebra-item',
+										},
+										{
+											elem: 'zebra-item',
+											elemMods: {background: 'light'},
+										},
+										{
+											elem: 'zebra-item',
+										}
+										
+									]
+								},
+								{
+									elem: 'schedule-table',
+									content: [
+										{
+											elem: 'schedule-row',	
+											mix: { block: 'text', mods: {size: 'xs', weight: 'bold', transform: 'uppercase', spacing: 's'} },
 											content: [
 												{
-													elem: 'icon-time',
-													content: [
-														{
-															elem: 'time-circle'
-														},
-														{
-															elem: 'segment-right'
-														},
-														{
-															elem: 'mask-right'
-														}
-													]
+													elem: 'schedule-cell',
+													elemMods: {state: 'head', width: '40', background: 'light'},
+													content: 'Время'
 												},
 												{
-													elem: 'time',
-													mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-													content: '13:00–14:45'
+													elem: 'schedule-cell',
+													elemMods: {state: 'head', width: '20', background: 'dark'},
+													content: 'Преподаватель'
+												},
+												{
+													elem: 'schedule-cell',
+													elemMods: {state: 'head', width: '20', background: 'light'},
+													content: 'Направление'
+												},
+												{
+													elem: 'schedule-cell',
+													elemMods: {state: 'head', width: '20', background: 'dark'},
+													content: 'Уровень'
 												}
 											]
 										},
 										{
-											elem: 'schedule-cell',
-											elemMods: {width: '30', align: 'center', background: 'light' },
-											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Сергей Шаталов'
-										},
-										{
-											elem: 'schedule-cell',
-											elemMods: {width: '30', align: 'center'},
-											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Дживамукти'
-										},
-										{
-											elem: 'schedule-cell',
-											elemMods: {width: '10', align: 'center', background: 'light' },
-											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Средний'
-										}
-									]
-								},
-								{
-									elem: 'schedule-row',
-									content: [
-										{
-											elem: 'schedule-cell',
-											elemMods: {width: '30', align: 'center', background: 'light' },
+											elem: 'schedule-row',
 											content: [
 												{
-													elem: 'icon-time',
+													elem: 'schedule-cell',
+													elemMods: {width: '40', align: 'center'},
 													content: [
 														{
-															elem: 'time-circle'
+															elem: 'icon-time',
+															content: [
+																{
+																	elem: 'time-circle'
+																},
+																{
+																	elem: 'segment-right'
+																},
+																{
+																	elem: 'mask-right'
+																}
+															]
 														},
 														{
-															elem: 'segment-bottom'
-														},
-														{
-															elem: 'mask-bottom'
+															elem: 'time',
+															mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+															content: '13:00–14:45'
 														}
 													]
 												},
 												{
-													elem: 'time',
-													mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-													content: '16:30–18:15'
+													elem: 'schedule-cell',
+													elemMods: {width: '20', align: 'center', background: 'light' },
+													mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: 'Сергей Шаталов'
+												},
+												{
+													elem: 'schedule-cell',
+													elemMods: {width: '20', align: 'center'},
+													mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: 'Дживамукти'
+												},
+												{
+													elem: 'schedule-cell',
+													elemMods: {width: '20', align: 'center', background: 'light' },
+													mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: 'Средний'
 												}
 											]
 										},
 										{
-											elem: 'schedule-cell',
-											elemMods: {width: '30', align: 'center'},
-											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Илона Белая'
-										},
-										{
-											elem: 'schedule-cell',
-											elemMods: {width: '30', align: 'center', background: 'light' },
-											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Дживамукти'
-										},
-										{
-											elem: 'schedule-cell',
-											elemMods: {width: '10', align: 'center'},
-											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Легкий'
-										}
-									]
-								},
-								{
-									elem: 'schedule-row',
-									content: [
-										{
-											elem: 'schedule-cell',
-											elemMods: {width: '30', align: 'center'},
+											elem: 'schedule-row',
 											content: [
 												{
-													elem: 'icon-time',
+													elem: 'schedule-cell',
+													elemMods: {width: '40', align: 'center', background: 'light' },
 													content: [
 														{
-															elem: 'time-circle'
+															elem: 'icon-time',
+															content: [
+																{
+																	elem: 'time-circle'
+																},
+																{
+																	elem: 'segment-bottom'
+																},
+																{
+																	elem: 'mask-bottom'
+																}
+															]
 														},
 														{
-															elem: 'segment-left'
-														},
-														{
-															elem: 'mask-left'
+															elem: 'time',
+															mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+															content: '16:30–18:15'
 														}
 													]
 												},
 												{
-													elem: 'time',
-													mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-													content: '19:45–21:30'
+													elem: 'schedule-cell',
+													elemMods: {width: '20', align: 'center'},
+													mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: 'Илона Белая'
+												},
+												{
+													elem: 'schedule-cell',
+													elemMods: {width: '20', align: 'center', background: 'light' },
+													mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: 'Дживамукти'
+												},
+												{
+													elem: 'schedule-cell',
+													elemMods: {width: '20', align: 'center'},
+													mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: 'Легкий'
 												}
 											]
 										},
 										{
-											elem: 'schedule-cell',
-											elemMods: {width: '30', align: 'center', background: 'light' },
-											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Алена Тихонова'
-										},
-										{
-											elem: 'schedule-cell',
-											elemMods: {width: '30', align: 'center'},
-											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Хатха'
-										},
-										{
-											elem: 'schedule-cell',
-											elemMods: {width: '10', align: 'center', background: 'light' },
-											mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
-											content: 'Легкий'
+											elem: 'schedule-row',
+											content: [
+												{
+													elem: 'schedule-cell',
+													elemMods: {width: '40', align: 'center'},
+													content: [
+														{
+															elem: 'icon-time',
+															content: [
+																{
+																	elem: 'time-circle'
+																},
+																{
+																	elem: 'segment-left'
+																},
+																{
+																	elem: 'mask-left'
+																}
+															]
+														},
+														{
+															elem: 'time',
+															mix: { block: 'text', mods: {size: 'xxxl', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+															content: '19:45–21:30'
+														}
+													]
+												},
+												{
+													elem: 'schedule-cell',
+													elemMods: {width: '20', align: 'center', background: 'light' },
+													mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: 'Алена Тихонова'
+												},
+												{
+													elem: 'schedule-cell',
+													elemMods: {width: '20', align: 'center'},
+													mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: 'Хатха'
+												},
+												{
+													elem: 'schedule-cell',
+													elemMods: {width: '20', align: 'center', background: 'light' },
+													mix: { block: 'text', mods: {size: 'm', weight: 'bold', transform: 'uppercase', spacing: 's'} },
+													content: 'Легкий'
+												}
+											]
 										}
 									]
+								},
+								{
+									elem: 'zebra',
+									elemMods: {align: 'left'},
+									content: [
+										{
+											elem: 'zebra-item',
+											elemMods: {background: 'dark'}
+										},
+										{
+											elem: 'zebra-item',
+											elemMods: {background: 'light'}
+										},
+										{
+											elem: 'zebra-item',
+										},
+										{
+											elem: 'zebra-item',
+											elemMods: {background: 'light'}
+										}
+										
+									]
 								}
-							]
-						},
-						{
-							elem: 'zebra',
-							elemMods: {align: 'left'},
-							content: [
-								{
-									elem: 'zebra-item',
-									elemMods: {background: 'dark'}
-								},
-								{
-									elem: 'zebra-item',
-									elemMods: {background: 'light'}
-								},
-								{
-									elem: 'zebra-item',
-								},
-								{
-									elem: 'zebra-item',
-									elemMods: {background: 'light'}
-								}
-								
 							]
 						}
 					]
@@ -907,7 +1007,134 @@ module.exports = {
 					]
 				}
 			]
-		}		
+		},
+
+		/* новизна */
+
+		{
+			block: 'nim-price',
+			content: [
+				{
+					elem: 'section-title',
+					mix: { block: 'text', mods: {size: 'xs', transform: 'uppercase', spacing: 's'} },
+					content: 'Магазин'
+				},
+				{
+					elem: 'row',
+					content: [
+						{
+							elem: 'tile',
+							elemMods: {background: 'lilac', align: 'between'},
+							content: [
+								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply'
+								},
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '600'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '1'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Занятие'
+										}
+									]
+								}
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'lilac'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'lilac'},
+							content: [
+
+							]
+						}
+					]
+				},
+				{
+					elem: 'row',
+					content: [
+						{
+							elem: 'tile',
+							elemMods: {background: 'lilac'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'gray'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'gray'},
+							content: [
+
+							]
+						}
+					]
+				},
+				{
+					elem: 'row',
+					content: [
+						{
+							elem: 'tile',
+							elemMods: {background: 'gray'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'green'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'green'},
+							content: [
+
+							]
+						}
+					]
+				}
+			]
+		},
+
 	// контент
 	]
 };
