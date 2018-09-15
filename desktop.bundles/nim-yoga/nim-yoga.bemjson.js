@@ -1027,6 +1027,12 @@ module.exports = {
 							elemMods: {background: 'lilac', align: 'between'},
 							content: [
 								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply'
+								},
+								{
 									elem: 'price',
 									content: [
 										{

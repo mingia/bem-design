@@ -27,6 +27,8 @@
     /* плитки-абонементы */
 
     &__tile {
+        position: relative;
+        z-index: 1;
         width: 310px;
         min-width: 310px;
         height: 310px;  
@@ -53,6 +55,28 @@
         }
     }
 
+    &__corner_substract {
+        position: absolute;
+        z-index: 2;
+        right: 0px;
+        bottom: 0px;
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid white;
+        border-left: 100px solid transparent;
+    }
+
+    &__corner_multiply {
+        position: absolute;
+        z-index: 3;
+        right: 0px;
+        bottom: 0px;
+        width: 0;
+        height: 0;
+        border-top: 100px solid #c5bad9;
+        border-right: 100px solid transparent;
+    }
+
     &__price {
         margin-left: 30px;
         margin-top: 20px;
@@ -62,7 +86,7 @@
 
     &__subscription {
         margin-left: 30px;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
     }
 
     &__title_50 {
