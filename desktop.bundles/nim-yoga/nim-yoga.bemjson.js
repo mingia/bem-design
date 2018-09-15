@@ -1007,7 +1007,128 @@ module.exports = {
 					]
 				}
 			]
-		}		
+		},
+
+		/* новизна */
+
+		{
+			block: 'nim-price',
+			content: [
+				{
+					elem: 'section-title',
+					mix: { block: 'text', mods: {size: 'xs', transform: 'uppercase', spacing: 's'} },
+					content: 'Магазин'
+				},
+				{
+					elem: 'row',
+					content: [
+						{
+							elem: 'tile',
+							elemMods: {background: 'lilac', align: 'between'},
+							content: [
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '600'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '1'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Занятие'
+										}
+									]
+								}
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'lilac'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'lilac'},
+							content: [
+
+							]
+						}
+					]
+				},
+				{
+					elem: 'row',
+					content: [
+						{
+							elem: 'tile',
+							elemMods: {background: 'lilac'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'gray'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'gray'},
+							content: [
+
+							]
+						}
+					]
+				},
+				{
+					elem: 'row',
+					content: [
+						{
+							elem: 'tile',
+							elemMods: {background: 'gray'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'green'},
+							content: [
+
+							]
+						},
+						{
+							elem: 'tile',
+							elemMods: {background: 'green'},
+							content: [
+
+							]
+						}
+					]
+				}
+			]
+		},
+
 	// контент
 	]
 };
