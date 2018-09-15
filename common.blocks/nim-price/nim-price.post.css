@@ -73,8 +73,21 @@
         bottom: 0px;
         width: 0;
         height: 0;
-        border-top: 100px solid #c5bad9;
         border-right: 100px solid transparent;
+
+        &_color {
+            &_lilac {
+                border-top: 100px solid #c5bad9;
+            }
+
+            &_gray {
+                border-top: 100px solid #dadada;
+            }
+
+            &_green {
+                border-top: 100px solid #bbdacd;
+            }
+        }
     }
 
     &__price {
