@@ -1030,7 +1030,8 @@ module.exports = {
 									elem: 'corner_substract'
 								},
 								{
-									elem: 'corner_multiply'
+									elem: 'corner_multiply',
+									elemMods: {color: 'lilac'}
 								},
 								{
 									elem: 'price',
@@ -1066,16 +1067,88 @@ module.exports = {
 						},
 						{
 							elem: 'tile',
-							elemMods: {background: 'lilac'},
+							elemMods: {background: 'lilac', align: 'between'},
 							content: [
-
+								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply',
+									elemMods: {color: 'lilac'}
+								},
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '2 800'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '5'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Занятий'
+										}
+									]
+								}
 							]
 						},
 						{
 							elem: 'tile',
-							elemMods: {background: 'lilac'},
+							elemMods: {background: 'lilac', align: 'between'},
 							content: [
-
+								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply',
+									elemMods: {color: 'lilac'}
+								},
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '5 300'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '10'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Занятий'
+										}
+									]
+								}
 							]
 						}
 					]
@@ -1085,23 +1158,131 @@ module.exports = {
 					content: [
 						{
 							elem: 'tile',
-							elemMods: {background: 'lilac'},
+							elemMods: {background: 'lilac', align: 'between'},
 							content: [
-
+								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply',
+									elemMods: {color: 'lilac'}
+								},
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '10 000'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '20'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Занятий'
+										}
+									]
+								}
 							]
 						},
 						{
 							elem: 'tile',
-							elemMods: {background: 'gray'},
+							elemMods: {background: 'gray', align: 'between'},
 							content: [
-
+								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply',
+									elemMods: {color: 'gray'}
+								},
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '16 500'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Абонемент'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'На сезон'
+										}
+									]
+								}
 							]
 						},
 						{
 							elem: 'tile',
-							elemMods: {background: 'gray'},
+							elemMods: {background: 'gray', align: 'between'},
 							content: [
-
+								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply',
+									elemMods: {color: 'gray'}
+								},
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '33 000'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Абонемент'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'На полгода'
+										}
+									]
+								}
 							]
 						}
 					]
@@ -1111,23 +1292,136 @@ module.exports = {
 					content: [
 						{
 							elem: 'tile',
-							elemMods: {background: 'gray'},
+							elemMods: {background: 'gray', align: 'between'},
 							content: [
-
+								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply',
+									elemMods: {color: 'gray'}
+								},
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '50 000'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Абонемент'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'На год'
+										}
+									]
+								}
 							]
 						},
 						{
 							elem: 'tile',
-							elemMods: {background: 'green'},
+							elemMods: {background: 'green', align: 'between'},
 							content: [
-
+								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply',
+									elemMods: {color: 'green'}
+								},
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '5 000'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Индивидуальное'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'занятие'
+										}
+									]
+								}
 							]
 						},
 						{
 							elem: 'tile',
-							elemMods: {background: 'green'},
+							elemMods: {background: 'green', align: 'between'},
 							content: [
-
+								{
+									elem: 'corner_substract'
+								},
+								{
+									elem: 'corner_multiply',
+									elemMods: {color: 'green'}
+								},
+								{
+									elem: 'price',
+									content: [
+										{
+											elem: 'title_50',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: '22 500'
+										},
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold'}},
+											content: 'руб'
+										}
+									]
+								},
+								{
+									elem: 'subscription',
+									content: [
+										{
+											elem: 'title_24',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: '5'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'Индивидуальных'
+										},
+										{
+											elem: 'title_15',
+											mix: {block: 'text', mods: {weight: 'bold', transform: 'uppercase'}},
+											content: 'занятий'
+										}
+									]
+								}
 							]
 						}
 					]
